@@ -1,0 +1,1064 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<link rel="manifest" href="data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22Portal%20Ujian%20Digital%20%28CBT%29%22%2C%22short_name%22%3A%22CBT%22%2C%22start_url%22%3A%22.%22%2C%22scope%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22any%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%234f46e5%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0ZjQ2ZTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0idXJsKCNnKSIvPjxwYXRoIGQ9Ik0yNTYgMTIwIDg4IDIwMGwxNjggODAgMTY4LTgweiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNDggMjUwdjgwYzAgMzAgNTAgNjIgMTA4IDYyczEwOC0zMiAxMDgtNjJ2LTgwbC0xMDggNTJ6IiBmaWxsPSIjZTBlN2ZmIi8%2BPC9zdmc%2B%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image/svg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0ZjQ2ZTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0idXJsKCNnKSIvPjxwYXRoIGQ9Ik0yNTYgMTIwIDg4IDIwMGwxNjggODAgMTY4LTgweiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNDggMjUwdjgwYzAgMzAgNTAgNjIgMTA4IDYyczEwOC0zMiAxMDgtNjJ2LTgwbC0xMDggNTJ6IiBmaWxsPSIjZTBlN2ZmIi8%2BPC9zdmc%2B%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/svg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0ZjQ2ZTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0idXJsKCNnKSIvPjxwYXRoIGQ9Ik0yNTYgMTIwIDg4IDIwMGwxNjggODAgMTY4LTgweiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNDggMjUwdjgwYzAgMzAgNTAgNjIgMTA4IDYyczEwOC0zMiAxMDgtNjJ2LTgwbC0xMDggNTJ6IiBmaWxsPSIjZTBlN2ZmIi8+PC9zdmc+">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#fff}
+.blogger-hidden,#navbar-iframe,.bg-photo-overlay,.header-widget,.Navbar,#header-wrapper,.sidebar-wrapper,.footer-outer,header,footer{display:none!important}
+#cbt-root{position:fixed;inset:0;z-index:2147483000;overflow-y:auto;overflow-x:hidden;background:#fff;font-family:'Inter',system-ui,sans-serif;color:#1e293b;-webkit-text-size-adjust:100%}
+#cbt-root *{box-sizing:border-box}
+#cbt-root .blob{position:fixed;border-radius:9999px;filter:blur(80px);opacity:.45;pointer-events:none;z-index:0}
+.glass{background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.75);box-shadow:0 8px 32px rgba(79,70,229,.08)}
+.glass-strong{background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border:1px solid rgba(226,232,240,.8);box-shadow:0 10px 40px rgba(15,23,42,.10)}
+.inp{width:100%;padding:.6rem .85rem;border:1px solid #e2e8f0;border-radius:.75rem;background:rgba(255,255,255,.85);font-size:.875rem;outline:none;transition:.15s}
+.inp:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.18)}
+.lbl{display:block;font-size:.72rem;font-weight:600;color:#64748b;margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.03em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.55rem 1rem;border-radius:.75rem;font-size:.85rem;font-weight:600;transition:.15s;cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-p{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;box-shadow:0 6px 16px rgba(79,70,229,.28)}
+.btn-p:hover{filter:brightness(1.07)}
+.btn-g{background:rgba(255,255,255,.8);color:#334155;border-color:#e2e8f0}
+.btn-g:hover{background:#fff}
+.btn-d{background:#fef2f2;color:#dc2626;border-color:#fecaca}
+.btn-d:hover{background:#fee2e2}
+.btn-s{background:#ecfdf5;color:#059669;border-color:#a7f3d0}
+.btn-sm{padding:.35rem .65rem;font-size:.75rem;border-radius:.6rem}
+.tbl{width:100%;border-collapse:collapse;text-align:left}
+.tbl th{padding:.7rem 1rem;font-size:.72rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid #e2e8f0;background:rgba(248,250,252,.7);white-space:nowrap}
+.tbl td{padding:.7rem 1rem;font-size:.85rem;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+.tbl tr:hover td{background:rgba(238,242,255,.5)}
+.badge{display:inline-block;padding:.15rem .6rem;border-radius:9999px;font-size:.7rem;font-weight:700}
+.nav-btn{display:flex;align-items:center;gap:.75rem;width:100%;padding:.7rem .9rem;border-radius:.85rem;font-size:.88rem;font-weight:600;color:#475569;transition:.15s;text-align:left}
+.nav-btn:hover{background:rgba(99,102,241,.08);color:#4338ca}
+.nav-btn.on{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;box-shadow:0 6px 16px rgba(79,70,229,.28)}
+.bn-btn{flex:0 0 auto;min-width:64px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:.45rem .5rem;border-radius:.9rem;font-size:.62rem;font-weight:700;color:#64748b}
+.bn-btn.on{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff}
+.bn-btn svg{width:20px;height:20px}
+.fade-in{animation:fi .25s ease}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.spin{width:44px;height:44px;border-radius:9999px;border:4px solid #e0e7ff;border-top-color:#4f46e5;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.token-box{font-family:ui-monospace,Menlo,monospace;letter-spacing:.3em;font-weight:800;font-size:2rem;color:#4338ca}
+#cbt-root ::-webkit-scrollbar{width:8px;height:8px}
+#cbt-root ::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:10px}
+.bn-scroll::-webkit-scrollbar{display:none}
+@media (max-width:767px){.token-box{font-size:1.6rem}}
+@media print{#cbt-root{display:none!important}}
+.noselect{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+</style>
+
+<div id="cbt-root">
+  <div class="blob" style="width:420px;height:420px;background:#c7d2fe;top:-120px;left:-100px"></div>
+  <div class="blob" style="width:380px;height:380px;background:#bae6fd;bottom:-120px;right:-80px"></div>
+  <div class="blob" style="width:300px;height:300px;background:#e9d5ff;top:40%;left:55%"></div>
+  <div id="app" style="position:relative;z-index:1;min-height:100%"></div>
+  <div id="loader" style="display:none;position:fixed;inset:0;z-index:50;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);align-items:center;justify-content:center;flex-direction:column;gap:12px">
+    <div class="spin"></div><div id="loader-text" class="text-sm font-semibold text-indigo-700">Memuat...</div>
+  </div>
+  <div id="toast" style="position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:90;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:calc(100% - 32px);max-width:420px"></div>
+  <div id="modal" style="display:none;position:fixed;inset:0;z-index:80;background:rgba(15,23,42,.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:16px"></div>
+</div>
+
+<script type="module">
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm';
+
+// KONFIGURASI APLIKASI
+const IS_PREVIEW = false; // Set false JIKA SUDAH TERHUBUNG KE SUPABASE
+// PASTE SUPABASE URL & ANON KEY ANDA DI SINI
+const SUPABASE_URL = "https://tehljdzbxvpiviqrfgff.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_08EIX-SApAQhrNs014eN8g_HK9t04zA";
+
+/* =====================================================================
+   UTIL
+===================================================================== */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid = () => 'id_' + Math.random().toString(36).slice(2, 11) + Date.now().toString(36).slice(-3);
+const rndToken = () => String(Math.floor(10000 + Math.random() * 90000));
+const rndPass = () => { const c = 'abcdefghjkmnpqrstuvwxyz23456789'; let s = ''; for (let i = 0; i < 6; i++) s += c[Math.floor(Math.random() * c.length)]; return s; };
+const pad = (n) => String(n).padStart(2, '0');
+const hhmm = (t) => String(t || '').slice(0, 5);
+const todayStr = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
+const addDays = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
+const fmtDate = (d) => { if (!d) return '-'; const x = new Date(String(d).slice(0, 10) + 'T00:00:00'); return x.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); };
+const fmtDur = (ms) => { ms = Math.max(0, ms); const s = Math.floor(ms / 1000); return `${pad(Math.floor(s / 3600))}:${pad(Math.floor(s % 3600 / 60))}:${pad(s % 60)}`; };
+const ICONS = {
+  'graduation-cap': '<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+  'users': '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  'shield-check': '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+  'eye': '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
+  'layout-dashboard': '<rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/>',
+  'school': '<path d="m4 6 8-4 8 4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M14 22v-4a2 2 0 0 0-4 0v4"/><path d="M18 5v17M6 5v17"/><circle cx="12" cy="9" r="2"/>',
+  'clock': '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+  'door-open': '<path d="M13 4h3a2 2 0 0 1 2 2v14"/><path d="M2 20h3M13 20h9M10 12v.01"/><path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z"/>',
+  'calendar-check': '<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/>',
+  'settings': '<path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/>',
+  'key': '<circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/>',
+  'clipboard-list': '<rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/>',
+  'user-cog': '<circle cx="18" cy="15" r="3"/><circle cx="9" cy="7" r="4"/><path d="M10 15H6a4 4 0 0 0-4 4v2"/><path d="m21.7 16.4-.9-.3M15.2 13.9l-.9-.3M16.6 18.7l.3-.9M19.1 12.2l.3-.9M19.6 18.7l-.4-1M16.8 12.3l-.4-1M14.3 16.6l1-.4M20.7 13.8l1-.4"/>',
+  'log-out': '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/>',
+  'download': '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>',
+  'upload': '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/>',
+  'trash-2': '<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/>',
+  'plus': '<path d="M5 12h14M12 5v14"/>',
+  'refresh-cw': '<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/>',
+  'printer': '<polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/>',
+  'pencil': '<path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/>',
+  'x': '<path d="M18 6 6 18M6 6l12 12"/>',
+  'play': '<polygon points="5 3 19 12 5 21 5 3"/>',
+  'check': '<polyline points="20 6 9 17 4 12"/>',
+  'timer': '<line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/>',
+  'activity': '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+  'lock-open': '<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/>',
+  'history': '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>'
+};
+const icons = () => {
+  document.querySelectorAll('i[data-lucide]').forEach(el => {
+    const p = ICONS[el.getAttribute('data-lucide')]; if (!p) return;
+    const sv = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    ['viewBox:0 0 24 24', 'fill:none', 'stroke:currentColor', 'stroke-width:2', 'stroke-linecap:round', 'stroke-linejoin:round', 'width:20', 'height:20'].forEach(a => { const i = a.indexOf(':'); sv.setAttribute(a.slice(0, i), a.slice(i + 1)); });
+    sv.style.cssText = 'flex-shrink:0;' + (el.getAttribute('style') || '');
+    if (el.getAttribute('class')) sv.setAttribute('class', el.getAttribute('class'));
+    sv.innerHTML = p; el.replaceWith(sv);
+  });
+};
+const byId = (arr, id) => (arr || []).find(x => x.id === id);
+
+function toast(msg, type = 'ok') {
+  const el = document.createElement('div');
+  const col = type === 'err' ? '#dc2626' : type === 'warn' ? '#d97706' : '#059669';
+  el.style.cssText = `background:rgba(255,255,255,.95);border:1px solid #e2e8f0;border-left:4px solid ${col};padding:10px 14px;border-radius:12px;font-size:.85rem;font-weight:600;box-shadow:0 10px 30px rgba(15,23,42,.15);width:100%`;
+  el.textContent = msg;
+  $('toast').appendChild(el);
+  setTimeout(() => { el.style.transition = '.3s'; el.style.opacity = '0'; setTimeout(() => el.remove(), 300); }, 3200);
+}
+function loading(on, text = 'Memuat...') { $('loader').style.display = on ? 'flex' : 'none'; $('loader-text').textContent = text; }
+async function run(fn, text) {
+  loading(true, text);
+  try { return await fn(); }
+  catch (e) {
+    console.error(e);
+    let m = (e && e.message) ? e.message : String(e);
+    if (/function .* does not exist|schema cache|relation .* does not exist/i.test(m)) m = 'Database belum disiapkan. Jalankan file SQL di Supabase SQL Editor terlebih dahulu.';
+    toast(m, 'err');
+    return undefined;
+  } finally { loading(false); }
+}
+function openModal(html, wide) {
+  const m = $('modal');
+  m.innerHTML = `<div class="glass-strong fade-in" style="border-radius:1.25rem;padding:1.5rem;width:100%;max-width:${wide ? '720px' : '420px'};max-height:90vh;overflow:auto">${html}</div>`;
+  m.style.display = 'flex'; icons();
+}
+function closeModal() { $('modal').style.display = 'none'; $('modal').innerHTML = ''; }
+function ask({ title, text = '', input = null, ok = 'OK', danger = false, cancel = true }) {
+  return new Promise(res => {
+    const inp = input ? `<input id="ask-inp" class="inp mt-3" type="${input.type || 'text'}" value="${esc(input.value || '')}" placeholder="${esc(input.placeholder || '')}" autocomplete="off">` : '';
+    openModal(`<h3 class="text-lg font-bold mb-1">${esc(title)}</h3><p class="text-sm text-slate-600">${text}</p>${inp}
+      <div class="flex gap-2 justify-end mt-5">${cancel ? '<button class="btn btn-g" id="ask-no">Batal</button>' : ''}<button class="btn ${danger ? 'btn-d' : 'btn-p'}" id="ask-yes">${esc(ok)}</button></div>`);
+    const done = (v) => { closeModal(); res(v); };
+    $('ask-yes').onclick = () => done(input ? $('ask-inp').value : true);
+    if ($('ask-no')) $('ask-no').onclick = () => done(input ? null : false);
+    if (input) { $('ask-inp').focus(); $('ask-inp').onkeydown = (e) => { if (e.key === 'Enter') $('ask-yes').click(); }; }
+  });
+}
+function printDoc(title, body) {
+  const w = window.open('', '_blank');
+  if (!w) { toast('Pop-up diblokir browser. Izinkan pop-up untuk mencetak.', 'warn'); return; }
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
+  body{font-family:Arial,Helvetica,sans-serif;color:#111;margin:24px}
+  h2,h3{margin:0 0 4px}.kop{text-align:center;border-bottom:3px double #111;padding-bottom:10px;margin-bottom:16px}
+  table{width:100%;border-collapse:collapse;margin-top:8px}th,td{border:1px solid #333;padding:6px 8px;font-size:13px;text-align:left}th{background:#eee}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{border:2px solid #333;border-radius:8px;padding:12px;page-break-inside:avoid;font-size:13px}
+  .card h4{margin:0 0 8px;text-align:center;border-bottom:1px solid #333;padding-bottom:6px}.card td{border:none;padding:2px 4px}
+  .ruang{page-break-after:always;margin-bottom:24px}.ruang:last-child{page-break-after:auto}
+  @media print{body{margin:10mm}}</style></head><body>${body}<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script></body></html>`);
+  w.document.close();
+}
+
+/* =====================================================================
+   STATE
+===================================================================== */
+const S = {
+  role: null, user: null, cred: null, page: '', offset: 0,
+  data: { kelas: [], users: [], sesi: [], ruang: [], ruang_siswa: [], ruang_pengawas: [], ujian: [] },
+  settings: { nama_app: 'Portal Ujian Digital', nama_sekolah: 'Sekolah Nusantara', alamat: '', logo: '', zona_waktu: 'Asia/Jakarta', maks_pelanggaran: 3 },
+  monId: '', mon: null, userTab: 'siswa', userQ: '', userKelas: '', ruangTab: 'ruang', plotRuang: '', plotKelas: '',
+  editUjian: null, pw: null, sw: null, room: null, installEvt: null, loginTab: 'user'
+};
+const now = () => Date.now() + S.offset;
+const sync = (serverNow) => { if (serverNow) S.offset = new Date(serverNow).getTime() - Date.now(); };
+
+/* =====================================================================
+   DATA LAYER - PREVIEW (memori) & LIVE (Supabase)
+===================================================================== */
+const M = { kelas: [], users: [], sesi: [], ruang: [], ruang_siswa: [], ruang_pengawas: [], ujian: [], peserta: [], pelanggaran: [], settings: null, seeded: false };
+
+function mView(u, secret) {
+  const s = byId(M.sesi, u.sesi_id), k = byId(M.kelas, u.kelas_id);
+  const st = new Date(`${u.tanggal}T${hhmm(s.jam_mulai)}:00`).getTime();
+  const en = new Date(`${u.tanggal}T${hhmm(s.jam_berakhir)}:00`).getTime() + u.extra_menit * 60000;
+  const o = { id: u.id, kelas_id: u.kelas_id, kelas: k ? k.nama_kelas : '-', mapel: u.mapel, tanggal: u.tanggal, sesi_id: u.sesi_id, sesi: s.nama_sesi,
+    jam_mulai: s.jam_mulai, jam_berakhir: s.jam_berakhir, status: u.status, extra_menit: u.extra_menit, start_at: new Date(st).toISOString(), end_at: new Date(en).toISOString() };
+  if (secret) { o.token = u.token; o.token_updated_at = u.token_updated_at; }
+  return o;
+}
+function mRotate() { M.ujian.forEach(u => { if (u.status === 'Aktif' && Date.now() - new Date(u.token_updated_at).getTime() > 300000) { u.token = rndToken(); u.token_updated_at = new Date().toISOString(); } }); }
+function mAuth(c, role) { const u = M.users.find(x => x.username === c.u && x._pw === c.p); if (!u || (role && u.role !== role)) throw new Error('Akses ditolak'); return u; }
+function mCascade(table, id) {
+  if (table === 'kelas') { M.users.forEach(u => { if (u.kelas_id === id) u.kelas_id = null; }); M.ujian = M.ujian.filter(x => x.kelas_id !== id); }
+  if (table === 'users') { M.ruang_siswa = M.ruang_siswa.filter(x => x.siswa_id !== id); M.ruang_pengawas = M.ruang_pengawas.filter(x => x.pengawas_id !== id); }
+  if (table === 'ruang') { M.ruang_siswa = M.ruang_siswa.filter(x => x.ruang_id !== id); M.ruang_pengawas = M.ruang_pengawas.filter(x => x.ruang_id !== id); }
+  if (table === 'sesi') { M.ujian = M.ujian.filter(x => x.sesi_id !== id); M.ruang_pengawas = M.ruang_pengawas.filter(x => x.sesi_id !== id); }
+}
+
+const P = {
+  async seed() {
+    if (M.seeded) return; M.seeded = true;
+    const mk = (n) => ({ id: uid(), nama_kelas: n });
+    const kA = mk('X-A'), kB = mk('X-B'), kC = mk('XI-IPA');
+    M.kelas = [kA, kB, kC];
+    const s1 = { id: uid(), nama_sesi: 'Sesi 1', jam_mulai: '07:30:00', jam_berakhir: '09:30:00' };
+    const s2 = { id: uid(), nama_sesi: 'Sesi 2', jam_mulai: '10:00:00', jam_berakhir: '12:00:00' };
+    const sU = { id: uid(), nama_sesi: 'Sesi Uji Coba (Seharian)', jam_mulai: '00:00:00', jam_berakhir: '23:59:00' };
+    M.sesi = [s1, s2, sU];
+    const r1 = { id: uid(), nama_ruang: 'Ruang 1' }, r2 = { id: uid(), nama_ruang: 'Ruang 2' };
+    M.ruang = [r1, r2];
+    const U = (username, pw, role, nama, kelas_id = null) => ({ id: uid(), username, _pw: pw, role, nama, kelas_id });
+    const p1 = U('pengawas01', 'pengawas123', 'pengawas', 'Budi Santoso, S.Pd'), p2 = U('pengawas02', 'pengawas123', 'pengawas', 'Siti Aminah, S.Pd');
+    const sw = [U('siswa001', 'siswa123', 'siswa', 'Ahmad Fauzi', kA.id), U('siswa002', 'siswa123', 'siswa', 'Dewi Lestari', kA.id), U('siswa003', 'siswa123', 'siswa', 'Rizky Pratama', kA.id),
+      U('siswa004', 'siswa123', 'siswa', 'Putri Ayu', kB.id), U('siswa005', 'siswa123', 'siswa', 'Bagas Wicaksono', kB.id), U('siswa006', 'siswa123', 'siswa', 'Nadia Rahma', kC.id)];
+    M.users = [p1, p2, ...sw];
+    M.ruang_siswa = [sw[0], sw[1], sw[2]].map(x => ({ id: uid(), ruang_id: r1.id, siswa_id: x.id })).concat([sw[3], sw[4], sw[5]].map(x => ({ id: uid(), ruang_id: r2.id, siswa_id: x.id })));
+    M.ruang_pengawas = [{ id: uid(), ruang_id: r1.id, sesi_id: sU.id, pengawas_id: p1.id, tanggal: todayStr() }, { id: uid(), ruang_id: r2.id, sesi_id: sU.id, pengawas_id: p2.id, tanggal: todayStr() }];
+    const link = 'https://example.com/';
+    const ts = new Date().toISOString();
+    M.ujian = [
+      { id: uid(), kelas_id: kA.id, mapel: 'Matematika', tanggal: todayStr(), sesi_id: sU.id, link, token: rndToken(), token_updated_at: ts, status: 'Aktif', extra_menit: 0 },
+      { id: uid(), kelas_id: kB.id, mapel: 'Bahasa Indonesia', tanggal: todayStr(), sesi_id: sU.id, link, token: rndToken(), token_updated_at: ts, status: 'Aktif', extra_menit: 0 },
+      { id: uid(), kelas_id: kA.id, mapel: 'IPA', tanggal: addDays(1), sesi_id: s1.id, link, token: rndToken(), token_updated_at: ts, status: 'Aktif', extra_menit: 0 }];
+    M.settings = { nama_app: 'Portal Ujian Digital', nama_sekolah: 'Sekolah Nusantara', alamat: 'Jl. Pendidikan No. 1', logo: '', zona_waktu: 'Asia/Jakarta', maks_pelanggaran: 3 };
+  },
+  async getSettings() { return { ...M.settings }; },
+  async saveSettings(s) { M.settings = { ...M.settings, ...s }; },
+  async adminLogin(email, pw) { if (email === 'admin@demo.com' && pw === 'admin123') return { email }; throw new Error('Email atau password admin salah!'); },
+  async adminSession() { return null; },
+  async adminLogout() {},
+  async loginUser(u, p) {
+    const x = M.users.find(a => a.username === u && a._pw === p);
+    if (!x) return { success: false, message: 'Username atau Password salah!' };
+    const k = byId(M.kelas, x.kelas_id);
+    return { success: true, user: { id: x.id, username: x.username, role: x.role, nama: x.nama, kelas_id: x.kelas_id, kelas: k ? k.nama_kelas : '' } };
+  },
+  async loadAll() {
+    mRotate();
+    const c = (a) => a.map(x => { const { _pw, ...r } = x; return { ...r }; });
+    return { kelas: c(M.kelas), users: c(M.users), sesi: c(M.sesi), ruang: c(M.ruang), ruang_siswa: c(M.ruang_siswa), ruang_pengawas: c(M.ruang_pengawas), ujian: c(M.ujian) };
+  },
+  async ins(t, row) {
+    if (t === 'users') { if (M.users.some(u => u.username === row.username)) throw new Error('Username sudah dipakai!'); const { password_hash, ...r } = row; const n = { id: uid(), ...r, _pw: password_hash }; M.users.push(n); return n; }
+    if (t === 'kelas' && M.kelas.some(k => k.nama_kelas === row.nama_kelas)) throw new Error('Nama kelas sudah ada!');
+    if (t === 'ruang' && M.ruang.some(k => k.nama_ruang === row.nama_ruang)) throw new Error('Nama ruang sudah ada!');
+    const n = { id: uid(), ...row }; if (t === 'ujian') { n.token = row.token || rndToken(); n.token_updated_at = new Date().toISOString(); n.status = 'Aktif'; n.extra_menit = 0; }
+    M[t].push(n); return n;
+  },
+  async upd(t, id, patch) { const x = byId(M[t], id); if (!x) throw new Error('Data tidak ditemukan'); if (t === 'users' && 'password_hash' in patch) { patch._pw = patch.password_hash; delete patch.password_hash; } Object.assign(x, patch); },
+  async del(t, id) { M[t] = M[t].filter(x => x.id !== id); mCascade(t, id); M.peserta = M.peserta.filter(p => byId(M.ujian, p.ujian_id) && byId(M.users, p.siswa_id)); },
+  async delPair(ruang_id, siswa_id) { M.ruang_siswa = M.ruang_siswa.filter(x => !(x.ruang_id === ruang_id && x.siswa_id === siswa_id)); },
+  async importUsers(rows) {
+    let n = 0;
+    for (const r of rows) {
+      let kid = null;
+      if (r.role === 'siswa' && r.kelas) { let k = M.kelas.find(x => x.nama_kelas === r.kelas); if (!k) { k = { id: uid(), nama_kelas: r.kelas }; M.kelas.push(k); } kid = k.id; }
+      const ex = M.users.find(u => u.username === r.username);
+      if (ex) Object.assign(ex, { _pw: r.password, role: r.role, nama: r.nama, kelas_id: kid });
+      else M.users.push({ id: uid(), username: r.username, _pw: r.password, role: r.role, nama: r.nama, kelas_id: kid });
+      n++;
+    }
+    return n;
+  },
+  async resetPasswords(list) { list.forEach(x => { const u = byId(M.users, x.id); if (u) u._pw = x.password; }); },
+  async refreshTokens() { mRotate(); },
+  async getExams(c) { const u = mAuth(c, 'siswa'); return { server_now: new Date().toISOString(), exams: M.ujian.filter(x => x.kelas_id === u.kelas_id).sort((a, b) => b.tanggal.localeCompare(a.tanggal)).map(x => mView(x, false)) }; },
+  async checkToken(c, id, token, sid) {
+    const u = mAuth(c, 'siswa'); mRotate();
+    const x = M.ujian.find(a => a.id === id && a.kelas_id === u.kelas_id);
+    if (!x) return { success: false, message: 'Ujian tidak ditemukan!' };
+    if (x.status !== 'Aktif') return { success: false, message: 'Ujian sudah diakhiri.' };
+    if (x.token !== String(token).trim()) return { success: false, message: 'Token salah atau sudah berganti!' };
+    const v = mView(x, false);
+    if (Date.now() < new Date(v.start_at).getTime()) return { success: false, message: 'Ujian belum dimulai.' };
+    if (Date.now() >= new Date(v.end_at).getTime()) return { success: false, message: 'Waktu ujian sudah berakhir.' };
+    const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === u.id);
+    if (pu) {
+      if (pu.terkunci) return { success: false, message: 'Ujian Anda terkunci karena pelanggaran. Hubungi pengawas.' };
+      if (pu.selesai) return { success: false, message: 'Anda sudah menyelesaikan ujian ini.' };
+      if (pu.session_id && pu.session_id !== sid && Date.now() - pu.last_seen < 45000) return { success: false, message: 'Ujian sedang dibuka di perangkat/tab lain. Tunggu 45 detik lalu coba lagi.' };
+      pu.session_id = sid; pu.last_seen = Date.now(); pu.mulai_at = pu.mulai_at || Date.now();
+    } else M.peserta.push({ ujian_id: id, siswa_id: u.id, session_id: sid, mulai_at: Date.now(), last_seen: Date.now(), pelanggaran: 0, terkunci: false, selesai: false, last_jenis: null });
+    return { success: true, link: x.link, end_at: v.end_at, server_now: new Date().toISOString() };
+  },
+  async examState(c, id, sid) {
+    const u = mAuth(c, 'siswa'); const x = byId(M.ujian, id); const v = mView(x, false);
+    const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === u.id);
+    if (pu && pu.session_id === sid) pu.last_seen = Date.now();
+    return { status: x.status, end_at: v.end_at, server_now: new Date().toISOString(), duplicate: !pu || pu.session_id !== sid, terkunci: !!(pu && pu.terkunci), pelanggaran: pu ? pu.pelanggaran : 0, maks: M.settings.maks_pelanggaran, selesai: !!(pu && pu.selesai) };
+  },
+  async logViolation(c, id, sid, jenis, detail) {
+    const u = mAuth(c, 'siswa'); const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === u.id); const mx = M.settings.maks_pelanggaran;
+    if (!pu || pu.session_id !== sid) return { ok: false, duplicate: true };
+    if (!pu.selesai) { pu.pelanggaran++; pu.terkunci = pu.pelanggaran >= mx; pu.last_jenis = jenis; pu.last_seen = Date.now(); M.pelanggaran.push({ ujian_id: id, siswa_id: u.id, jenis, detail: detail || '', created_at: new Date().toISOString() }); }
+    return { ok: true, pelanggaran: pu.pelanggaran, maks: mx, terkunci: pu.terkunci };
+  },
+  async finishExam(c, id, sid) { const u = mAuth(c, 'siswa'); const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === u.id && p.session_id === sid); if (pu) pu.selesai = true; return { success: true }; },
+  async getMonitor(c, id) {
+    if (c) mAuth(c, 'pengawas'); const x = byId(M.ujian, id);
+    const rows = M.users.filter(s => s.role === 'siswa' && s.kelas_id === x.kelas_id).sort((a, b) => a.nama.localeCompare(b.nama)).map(s => {
+      const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === s.id); const rs = M.ruang_siswa.find(r => r.siswa_id === s.id);
+      return { siswa_id: s.id, nama: s.nama, username: s.username, ruang: rs ? byId(M.ruang, rs.ruang_id).nama_ruang : '-', pelanggaran: pu ? pu.pelanggaran : 0, terkunci: !!(pu && pu.terkunci), selesai: !!(pu && pu.selesai),
+        mulai_at: pu && pu.mulai_at ? new Date(pu.mulai_at).toISOString() : null, last_seen: pu && pu.last_seen ? new Date(pu.last_seen).toISOString() : null, last_jenis: pu ? pu.last_jenis : null,
+        riwayat: M.pelanggaran.filter(p => p.ujian_id === id && p.siswa_id === s.id).slice().reverse().slice(0, 10).map(p => ({ jenis: p.jenis, detail: p.detail, waktu: p.created_at })) };
+    });
+    return { server_now: new Date().toISOString(), maks: M.settings.maks_pelanggaran, rows };
+  },
+  async monitorAction(c, id, siswaId, aksi) {
+    if (c) mAuth(c, 'pengawas'); const pu = M.peserta.find(p => p.ujian_id === id && p.siswa_id === siswaId); if (!pu) return { success: true };
+    if (aksi === 'buka_kunci') pu.terkunci = false;
+    else if (aksi === 'masuk_ulang') { pu.selesai = false; pu.terkunci = false; pu.session_id = null; pu.last_seen = 0; }
+    else if (aksi === 'reset') { pu.pelanggaran = 0; pu.selesai = false; pu.terkunci = false; pu.session_id = null; pu.last_seen = 0; M.pelanggaran = M.pelanggaran.filter(p => !(p.ujian_id === id && p.siswa_id === siswaId)); }
+    return { success: true };
+  },
+  async getPengawas(c) {
+    const u = mAuth(c, 'pengawas'); mRotate();
+    return { server_now: new Date().toISOString(), exams: M.ujian.slice().sort((a, b) => b.tanggal.localeCompare(a.tanggal)).map(x => mView(x, true)),
+      tugas: M.ruang_pengawas.filter(r => r.pengawas_id === u.id).map(r => { const s = byId(M.sesi, r.sesi_id); return { tanggal: r.tanggal, ruang: byId(M.ruang, r.ruang_id).nama_ruang, sesi: s.nama_sesi, jam_mulai: s.jam_mulai, jam_berakhir: s.jam_berakhir }; }) };
+  },
+  async newToken(c, id) { mAuth(c, 'pengawas'); const x = byId(M.ujian, id); x.token = rndToken(); x.token_updated_at = new Date().toISOString(); return { success: true, token: x.token }; },
+  async extend(c, id, m) { mAuth(c, 'pengawas'); byId(M.ujian, id).extra_menit += Math.min(Math.max(m, 1), 180); return { success: true }; },
+  async endExam(c, id) { mAuth(c, 'pengawas'); byId(M.ujian, id).status = 'Selesai'; return { success: true }; }
+};
+
+let sb = null;
+const L = {
+  rpc: async (n, a) => { const { data, error } = await sb.rpc(n, a); if (error) throw new Error(error.message); return data; },
+  cr: (c) => (c ? { p_username: c.u, p_password: c.p } : { p_username: null, p_password: null }),
+  async seed() { /* data awal dibuat oleh autoSetupDatabase() lewat RPC setup_initial_data */ },
+  async getSettings() { const { data, error } = await sb.from('settings').select('*').eq('id', 1).maybeSingle(); if (error) throw new Error(error.message); return data; },
+  async saveSettings(s) { const { error } = await sb.from('settings').update(s).eq('id', 1); if (error) throw new Error(error.message); },
+  async adminLogin(email, pw) { const { data, error } = await sb.auth.signInWithPassword({ email, password: pw }); if (error) throw new Error('Email atau password admin salah!'); return data.user; },
+  async adminSession() { const { data } = await sb.auth.getSession(); return data && data.session ? data.session.user : null; },
+  async adminLogout() { await sb.auth.signOut(); },
+  async loginUser(u, p) { return L.rpc('login_user', { p_username: u, p_password: p }); },
+  async loadAll() {
+    await sb.rpc('refresh_tokens');
+    const tabs = ['kelas', 'sesi', 'ruang', 'ruang_siswa', 'ruang_pengawas', 'ujian'];
+    const res = await Promise.all([sb.from('users').select('id,username,role,nama,kelas_id').order('nama'), ...tabs.map(t => sb.from(t).select('*'))]);
+    const out = {};
+    ['users', ...tabs].forEach((t, i) => { if (res[i].error) throw new Error(res[i].error.message); out[t] = res[i].data || []; });
+    return out;
+  },
+  async ins(t, row) { const { data, error } = await sb.from(t).insert(row).select().single(); if (error) throw new Error(error.code === '23505' ? 'Data sudah ada (duplikat)!' : error.message); return data; },
+  async upd(t, id, patch) { const { error } = await sb.from(t).update(patch).eq('id', id); if (error) throw new Error(error.message); },
+  async del(t, id) { const { error } = await sb.from(t).delete().eq('id', id); if (error) throw new Error(error.message); },
+  async delPair(ruang_id, siswa_id) { const { error } = await sb.from('ruang_siswa').delete().match({ ruang_id, siswa_id }); if (error) throw new Error(error.message); },
+  async importUsers(rows) {
+    const { data: kl, error: e1 } = await sb.from('kelas').select('*'); if (e1) throw new Error(e1.message);
+    const map = {}; kl.forEach(k => map[k.nama_kelas] = k.id);
+    const need = [...new Set(rows.filter(r => r.role === 'siswa' && r.kelas && !map[r.kelas]).map(r => r.kelas))];
+    if (need.length) { const { data, error } = await sb.from('kelas').insert(need.map(n => ({ nama_kelas: n }))).select(); if (error) throw new Error(error.message); data.forEach(k => map[k.nama_kelas] = k.id); }
+    const payload = rows.map(r => ({ username: r.username, password_hash: r.password, role: r.role, nama: r.nama, kelas_id: r.role === 'siswa' && r.kelas ? map[r.kelas] : null }));
+    for (let i = 0; i < payload.length; i += 200) { const { error } = await sb.from('users').upsert(payload.slice(i, i + 200), { onConflict: 'username' }); if (error) throw new Error(error.message); }
+    return payload.length;
+  },
+  async resetPasswords(list) { await Promise.all(list.map(async x => { const { error } = await sb.from('users').update({ password_hash: x.password }).eq('id', x.id); if (error) throw new Error(error.message); })); },
+  async refreshTokens() { await sb.rpc('refresh_tokens'); },
+  async getExams(c) { return L.rpc('get_exams_siswa', L.cr(c)); },
+  async checkToken(c, id, token, sid) { return L.rpc('check_token', { ...L.cr(c), p_ujian_id: id, p_token: String(token), p_session: sid }); },
+  async examState(c, id, sid) { return L.rpc('exam_state', { ...L.cr(c), p_ujian_id: id, p_session: sid }); },
+  async logViolation(c, id, sid, jenis, detail) { return L.rpc('log_violation', { ...L.cr(c), p_ujian_id: id, p_session: sid, p_jenis: jenis, p_detail: detail || '' }); },
+  async finishExam(c, id, sid) { return L.rpc('finish_exam', { ...L.cr(c), p_ujian_id: id, p_session: sid }); },
+  async getMonitor(c, id) { return L.rpc('get_monitor', { ...L.cr(c), p_ujian_id: id }); },
+  async monitorAction(c, id, siswaId, aksi) { return L.rpc('monitor_action', { ...L.cr(c), p_ujian_id: id, p_siswa_id: siswaId, p_aksi: aksi }); },
+  async getPengawas(c) { return L.rpc('get_pengawas_data', L.cr(c)); },
+  async newToken(c, id) { return L.rpc('pengawas_new_token', { ...L.cr(c), p_ujian_id: id }); },
+  async extend(c, id, m) { return L.rpc('extend_exam', { ...L.cr(c), p_ujian_id: id, p_menit: m }); },
+  async endExam(c, id) { return L.rpc('end_exam', { ...L.cr(c), p_ujian_id: id }); }
+};
+let API = P;
+
+// SETUP DATABASE OTOMATIS: cek tabel kosong -> isi data awal (preview: hanya di memori)
+async function autoSetupDatabase() {
+  if (IS_PREVIEW) { await P.seed(); return; }
+  try {
+    const { data, error } = await sb.rpc('setup_initial_data');
+    if (error) throw error;
+    if (data && data.seeded) toast('Data awal berhasil dibuat otomatis (akun contoh, kelas, sesi, ujian).');
+  } catch (e) { console.warn('autoSetupDatabase:', e.message); }
+}
+
+/* =====================================================================
+   PWA (manifest data URI di <head>, Service Worker dibuat dari Blob)
+===================================================================== */
+function setupPWA() {
+  try { const mf = document.querySelector('link[rel="manifest"]'); if (mf && !document.head.contains(mf)) document.head.appendChild(mf.cloneNode()); const mt = document.querySelector('meta[name="theme-color"]'); if (mt && !document.head.contains(mt)) document.head.appendChild(mt.cloneNode()); } catch (e) {}
+  try {
+    const sw = "const C='cbt-v1';self.addEventListener('install',e=>{self.skipWaiting()});self.addEventListener('activate',e=>{e.waitUntil(self.clients.claim())});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const c=r.clone();if(r.ok&&e.request.url.startsWith('http'))caches.open(C).then(x=>x.put(e.request,c)).catch(()=>{});return r}).catch(()=>caches.match(e.request)))});";
+    const url = URL.createObjectURL(new Blob([sw], { type: 'text/javascript' }));
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register(url).catch(() => {});
+  } catch (e) {}
+  window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); S.installEvt = e; if (S.role) render(); });
+}
+
+/* =====================================================================
+   RENDER: LOGIN
+===================================================================== */
+function brand(size = 40) {
+  const lg = S.settings.logo;
+  return lg ? `<img src="${esc(lg)}" style="width:${size}px;height:${size}px;object-fit:contain;border-radius:10px" alt="">`
+    : `<div style="width:${size}px;height:${size}px" class="rounded-xl bg-gradient-to-br from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-lg"><i data-lucide="graduation-cap" style="width:${size * .55}px;height:${size * .55}px"></i></div>`;
+}
+function renderLogin() {
+  const t = S.loginTab;
+  $('app').innerHTML = `<div class="min-h-screen flex items-center justify-center p-4"><div class="glass-strong fade-in w-full max-w-md rounded-3xl p-7 md:p-9">
+    <div class="flex flex-col items-center text-center mb-6">${brand(64)}<h1 class="text-2xl font-extrabold mt-4 text-slate-800">${esc(S.settings.nama_app)}</h1><p class="text-sm text-slate-500">${esc(S.settings.nama_sekolah)}</p></div>
+    <div class="grid grid-cols-2 gap-1 p-1 rounded-xl bg-slate-100 mb-5">
+      <button class="btn ${t === 'user' ? 'btn-p' : 'btn-g'} !shadow-none" onclick="A.loginTab('user')"><i data-lucide="users" style="width:16px;height:16px"></i> Peserta / Pengawas</button>
+      <button class="btn ${t === 'admin' ? 'btn-p' : 'btn-g'} !shadow-none" onclick="A.loginTab('admin')"><i data-lucide="shield-check" style="width:16px;height:16px"></i> Admin</button>
+    </div>
+    <form onsubmit="return A.doLogin(event)" class="space-y-4">
+      <div><label class="lbl">${t === 'admin' ? 'Email Admin' : 'Username / ID'}</label><input id="lg-u" class="inp" type="${t === 'admin' ? 'email' : 'text'}" required autocomplete="username" placeholder="${t === 'admin' ? 'admin@email.com' : 'Masukkan username'}"></div>
+      <div><label class="lbl">Password</label><div class="relative"><input id="lg-p" class="inp pr-10" type="password" required autocomplete="current-password" placeholder="••••••••"><button type="button" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" onclick="A.togglePw()"><i data-lucide="eye" style="width:18px;height:18px"></i></button></div></div>
+      <button class="btn btn-p w-full !py-3" type="submit">Masuk</button>
+    </form>
+    ${IS_PREVIEW ? `<div class="mt-5 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-800 leading-relaxed"><b>MODE PREVIEW</b> (data dummy di memori, tidak masuk Supabase)<br>Admin: <code>admin@demo.com</code> / <code>admin123</code><br>Pengawas: <code>pengawas01</code> / <code>pengawas123</code><br>Siswa: <code>siswa001</code> / <code>siswa123</code></div>` : ''}
+  </div></div>`;
+  icons();
+}
+
+/* =====================================================================
+   RENDER: SHELL (sidebar desktop + bottom nav mobile)
+===================================================================== */
+const MENUS = {
+  admin: [['dashboard', 'Dashboard', 'layout-dashboard'], ['kelas', 'Kelas', 'school'], ['users', 'Pengguna', 'users'], ['sesi', 'Sesi', 'clock'], ['ruang', 'Ruang', 'door-open'], ['ujian', 'Jadwal Ujian', 'calendar-check'], ['monitor', 'Monitoring', 'activity'], ['settings', 'Pengaturan', 'settings']],
+  pengawas: [['p_jadwal', 'Jadwal & Token', 'key'], ['p_monitor', 'Pantau Peserta', 'activity'], ['p_tugas', 'Tugas Saya', 'clipboard-list']],
+  siswa: [['s_ujian', 'Ujian Saya', 'calendar-check'], ['s_profil', 'Profil', 'user-cog']]
+};
+const ROLE_LABEL = { admin: 'Administrator', pengawas: 'Pengawas', siswa: 'Peserta' };
+function shell(content) {
+  const menus = MENUS[S.role];
+  const nav = menus.map(m => `<button class="nav-btn ${S.page === m[0] ? 'on' : ''}" onclick="A.go('${m[0]}')"><i data-lucide="${m[2]}" style="width:18px;height:18px"></i>${m[1]}</button>`).join('');
+  const bn = menus.map(m => `<button class="bn-btn ${S.page === m[0] ? 'on' : ''}" onclick="A.go('${m[0]}')"><i data-lucide="${m[2]}"></i><span>${m[1]}</span></button>`).join('');
+  const inst = S.installEvt ? `<button class="nav-btn" onclick="A.install()"><i data-lucide="download" style="width:18px;height:18px"></i>Pasang Aplikasi</button>` : '';
+  return `<aside class="hidden md:flex flex-col fixed left-0 top-0 bottom-0 w-64 glass-strong p-4 z-20" style="border-radius:0 1.5rem 1.5rem 0">
+      <div class="flex items-center gap-3 px-2 py-3 mb-3">${brand(40)}<div class="min-w-0"><div class="font-extrabold text-slate-800 leading-tight truncate">${esc(S.settings.nama_app)}</div><div class="text-[11px] text-slate-500 truncate">${esc(S.settings.nama_sekolah)}</div></div></div>
+      <nav class="flex-1 space-y-1 overflow-y-auto">${nav}${inst}</nav>
+      <div class="mt-3 p-3 rounded-2xl bg-indigo-50/80 border border-indigo-100"><div class="text-sm font-bold text-indigo-900 truncate">${esc(S.user.nama)}</div><div class="text-[11px] text-indigo-600 mb-2">${ROLE_LABEL[S.role]}${S.user.kelas ? ' • ' + esc(S.user.kelas) : ''}</div>
+        <button class="btn btn-d btn-sm w-full" onclick="A.logout()"><i data-lucide="log-out" style="width:14px;height:14px"></i> Keluar</button></div>
+    </aside>
+    <header class="md:hidden sticky top-0 z-20 glass-strong flex items-center justify-between px-4 py-3" style="border-radius:0 0 1.25rem 1.25rem">
+      <div class="flex items-center gap-2 min-w-0">${brand(32)}<div class="font-extrabold text-slate-800 truncate text-sm">${esc(S.settings.nama_app)}</div></div>
+      <div class="flex items-center gap-2">${S.installEvt ? `<button class="btn btn-g btn-sm" onclick="A.install()"><i data-lucide="download" style="width:14px;height:14px"></i></button>` : ''}<button class="btn btn-d btn-sm" onclick="A.logout()"><i data-lucide="log-out" style="width:14px;height:14px"></i></button></div>
+    </header>
+    <main class="md:ml-64 p-4 md:p-8 pb-32 md:pb-8 fade-in" id="main">${content}</main>
+    <nav class="md:hidden fixed left-3 right-3 z-30 glass-strong rounded-2xl p-1.5 flex gap-1 overflow-x-auto bn-scroll" style="bottom:calc(12px + env(safe-area-inset-bottom));justify-content:${menus.length < 4 ? 'space-around' : 'flex-start'}">${bn}</nav>`;
+}
+const card = (title, inner, extra = '') => `<div class="glass rounded-2xl p-5 md:p-6 mb-5"><div class="flex items-center justify-between gap-3 flex-wrap mb-4"><h3 class="font-bold text-lg text-slate-800">${title}</h3>${extra}</div>${inner}</div>`;
+const pageTitle = (t, sub = '') => `<div class="mb-6"><h2 class="text-2xl md:text-3xl font-extrabold text-slate-800">${t}</h2>${sub ? `<p class="text-sm text-slate-500 mt-1">${sub}</p>` : ''}</div>`;
+const tableWrap = (inner) => `<div class="overflow-x-auto rounded-xl border border-slate-100 bg-white/60">${inner}</div>`;
+const empty = (t = 'Belum ada data.') => `<div class="text-center text-sm text-slate-400 py-8">${t}</div>`;
+const kName = (id) => (byId(S.data.kelas, id) || {}).nama_kelas || '-';
+const uName = (id) => (byId(S.data.users, id) || {}).nama || '-';
+const delBtn = (t, id) => `<button class="btn btn-d btn-sm" onclick="A.del('${t}','${id}')"><i data-lucide="trash-2" style="width:14px;height:14px"></i></button>`;
+const kelasOpts = (sel = '', all = false) => (all ? `<option value="">Semua Kelas</option>` : `<option value="">- Pilih Kelas -</option>`) + S.data.kelas.slice().sort((a, b) => a.nama_kelas.localeCompare(b.nama_kelas)).map(k => `<option value="${k.id}" ${k.id === sel ? 'selected' : ''}>${esc(k.nama_kelas)}</option>`).join('');
+const sesiLabel = (s) => `${esc(s.nama_sesi)} (${hhmm(s.jam_mulai)}-${hhmm(s.jam_berakhir)})`;
+
+/* =====================================================================
+   ADMIN PAGES
+===================================================================== */
+function pgDashboard() {
+  const d = S.data, t = todayStr();
+  const stat = (n, l, ic, c) => `<div class="glass rounded-2xl p-5 flex items-center gap-4"><div class="w-12 h-12 rounded-xl flex items-center justify-center ${c}"><i data-lucide="${ic}"></i></div><div><div class="text-3xl font-extrabold text-slate-800">${n}</div><div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">${l}</div></div></div>`;
+  const list = (arr) => !arr.length ? empty('Tidak ada ujian.') : tableWrap(`<table class="tbl"><thead><tr><th>Mapel</th><th>Kelas</th><th>Tanggal</th><th>Sesi</th><th>Token</th><th>Status</th></tr></thead><tbody>${arr.map(u => { const s = byId(d.sesi, u.sesi_id) || {}; return `<tr><td class="font-semibold">${esc(u.mapel)}</td><td>${esc(kName(u.kelas_id))}</td><td>${fmtDate(u.tanggal)}</td><td>${esc(s.nama_sesi || '-')} <span class="text-slate-400">${hhmm(s.jam_mulai)}-${hhmm(s.jam_berakhir)}</span></td><td><b class="font-mono tracking-widest text-indigo-700">${esc(u.token)}</b></td><td>${statusBadge(u.status)}</td></tr>`; }).join('')}</tbody></table>`);
+  const hari = d.ujian.filter(u => u.tanggal === t), depan = d.ujian.filter(u => u.tanggal > t).sort((a, b) => a.tanggal.localeCompare(b.tanggal));
+  return pageTitle('Dashboard', `Selamat datang, ${esc(S.user.nama)} 👋`) +
+    `<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">${stat(d.kelas.length, 'Kelas', 'school', 'bg-indigo-100 text-indigo-600')}${stat(d.users.filter(u => u.role === 'siswa').length, 'Siswa', 'users', 'bg-sky-100 text-sky-600')}${stat(d.ruang.length, 'Ruang', 'door-open', 'bg-violet-100 text-violet-600')}${stat(d.ujian.length, 'Ujian', 'calendar-check', 'bg-emerald-100 text-emerald-600')}</div>` +
+    card('Ujian Hari Ini', list(hari), `<button class="btn btn-g btn-sm" onclick="A.reload()"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i> Segarkan</button>`) +
+    card('Ujian Mendatang', list(depan)) + `<p class="text-xs text-slate-400">Token berganti otomatis setiap 5 menit. Tekan Segarkan untuk melihat token terbaru.</p>`;
+}
+const statusBadge = (s) => s === 'Aktif' ? '<span class="badge bg-emerald-100 text-emerald-700">Aktif</span>' : '<span class="badge bg-slate-200 text-slate-600">Selesai</span>';
+
+function pgKelas() {
+  const rows = S.data.kelas.slice().sort((a, b) => a.nama_kelas.localeCompare(b.nama_kelas));
+  return pageTitle('Kelas', 'Kelola daftar kelas.') + `<div class="grid lg:grid-cols-3 gap-5"><div>${card('Tambah Kelas', `<form onsubmit="return A.addKelas(event)" class="space-y-3"><div><label class="lbl">Nama Kelas</label><input id="f-kelas" class="inp" required placeholder="mis. X-A"></div><button class="btn btn-p w-full"><i data-lucide="plus" style="width:16px;height:16px"></i> Simpan</button></form>`)}</div>
+    <div class="lg:col-span-2">${card('Daftar Kelas', !rows.length ? empty() : tableWrap(`<table class="tbl"><thead><tr><th>#</th><th>Nama Kelas</th><th>Jumlah Siswa</th><th></th></tr></thead><tbody>${rows.map((k, i) => `<tr><td>${i + 1}</td><td class="font-semibold">${esc(k.nama_kelas)}</td><td>${S.data.users.filter(u => u.kelas_id === k.id && u.role === 'siswa').length}</td><td class="text-right">${delBtn('kelas', k.id)}</td></tr>`).join('')}</tbody></table>`))}</div></div>`;
+}
+
+function userRows() {
+  const q = S.userQ.toLowerCase();
+  return S.data.users.filter(u => u.role === S.userTab && (!S.userKelas || u.kelas_id === S.userKelas) && (!q || (u.nama + ' ' + u.username).toLowerCase().includes(q)));
+}
+function userTable() {
+  const rows = userRows();
+  if (!rows.length) return empty('Tidak ada pengguna.');
+  const sw = S.userTab === 'siswa';
+  return tableWrap(`<table class="tbl"><thead><tr><th>#</th><th>Nama</th><th>Username</th>${sw ? '<th>Kelas</th>' : ''}<th></th></tr></thead><tbody>${rows.map((u, i) => `<tr><td>${i + 1}</td><td class="font-semibold">${esc(u.nama)}</td><td><code>${esc(u.username)}</code></td>${sw ? `<td>${esc(kName(u.kelas_id))}</td>` : ''}<td class="text-right whitespace-nowrap"><button class="btn btn-g btn-sm" title="Ganti password" onclick="A.changePw('${u.id}')"><i data-lucide="key" style="width:14px;height:14px"></i></button> ${delBtn('users', u.id)}</td></tr>`).join('')}</tbody></table>`);
+}
+function pgUsers() {
+  const sw = S.userTab === 'siswa';
+  return pageTitle('Pengguna', 'Kelola akun siswa dan pengawas.') +
+    `<div class="flex gap-2 mb-5"><button class="btn ${sw ? 'btn-p' : 'btn-g'}" onclick="A.userTab('siswa')">Siswa</button><button class="btn ${!sw ? 'btn-p' : 'btn-g'}" onclick="A.userTab('pengawas')">Pengawas</button></div>
+    <div class="grid lg:grid-cols-3 gap-5"><div>
+      ${card('Tambah ' + (sw ? 'Siswa' : 'Pengawas'), `<form onsubmit="return A.addUser(event)" class="space-y-3">
+        <div><label class="lbl">Nama Lengkap</label><input id="f-nama" class="inp" required></div>
+        <div><label class="lbl">Username / ID</label><input id="f-user" class="inp" required autocomplete="off"></div>
+        <div><label class="lbl">Password</label><input id="f-pass" class="inp" required autocomplete="new-password"></div>
+        ${sw ? `<div><label class="lbl">Kelas</label><select id="f-kls" class="inp" required>${kelasOpts()}</select></div>` : ''}
+        <button class="btn btn-p w-full"><i data-lucide="plus" style="width:16px;height:16px"></i> Simpan</button></form>`)}
+      ${card('Import Excel', `<p class="text-xs text-slate-500 mb-3">Kolom: <b>username, password, nama, role, kelas</b>. Role: siswa / pengawas. Username yang sama akan diperbarui. Kelas baru dibuat otomatis.</p>
+        <div class="flex flex-col gap-2"><button class="btn btn-g" onclick="A.template()"><i data-lucide="download" style="width:16px;height:16px"></i> Unduh Template</button>
+        <input type="file" id="f-import" accept=".xlsx,.xls,.csv" class="hidden" onchange="A.importFile(this)"><button class="btn btn-s" onclick="document.getElementById('f-import').click()"><i data-lucide="upload" style="width:16px;height:16px"></i> Import File</button></div>`)}
+      ${sw ? card('Cetak Kartu Peserta', `<p class="text-xs text-slate-500 mb-3">Password disimpan terenkripsi, sehingga saat mencetak password siswa akan <b>direset ke password acak baru</b> lalu dicetak pada kartu.</p><select id="f-kartu" class="inp mb-3">${kelasOpts('', true)}</select><button class="btn btn-p w-full" onclick="A.cetakKartu()"><i data-lucide="printer" style="width:16px;height:16px"></i> Cetak Kartu</button>`) : ''}
+    </div>
+    <div class="lg:col-span-2">${card('Data ' + (sw ? 'Siswa' : 'Pengawas') + ` <span class="text-sm font-medium text-slate-400">(${userRows().length})</span>`,
+      `<div class="flex gap-2 mb-3 flex-wrap"><input class="inp" style="flex:1;min-width:160px" placeholder="Cari nama / username..." value="${esc(S.userQ)}" oninput="A.userSearch(this.value)">${sw ? `<select class="inp" style="width:auto" onchange="A.userKelasFilter(this.value)">${kelasOpts(S.userKelas, true)}</select>` : ''}</div><div id="user-table">${userTable()}</div>`)}</div></div>`;
+}
+
+function pgSesi() {
+  const rows = S.data.sesi.slice().sort((a, b) => hhmm(a.jam_mulai).localeCompare(hhmm(b.jam_mulai)));
+  return pageTitle('Sesi Ujian', 'Atur jam mulai dan berakhir tiap sesi.') + `<div class="grid lg:grid-cols-3 gap-5"><div>${card('Tambah Sesi', `<form onsubmit="return A.addSesi(event)" class="space-y-3">
+    <div><label class="lbl">Nama Sesi</label><input id="f-sesi" class="inp" required placeholder="mis. Sesi 1"></div>
+    <div class="grid grid-cols-2 gap-3"><div><label class="lbl">Jam Mulai</label><input id="f-jm" type="time" class="inp" required></div><div><label class="lbl">Jam Berakhir</label><input id="f-jb" type="time" class="inp" required></div></div>
+    <button class="btn btn-p w-full"><i data-lucide="plus" style="width:16px;height:16px"></i> Simpan</button></form>`)}</div>
+    <div class="lg:col-span-2">${card('Daftar Sesi', !rows.length ? empty() : tableWrap(`<table class="tbl"><thead><tr><th>Sesi</th><th>Mulai</th><th>Berakhir</th><th></th></tr></thead><tbody>${rows.map(s => `<tr><td class="font-semibold">${esc(s.nama_sesi)}</td><td>${hhmm(s.jam_mulai)}</td><td>${hhmm(s.jam_berakhir)}</td><td class="text-right">${delBtn('sesi', s.id)}</td></tr>`).join('')}</tbody></table>`))}</div></div>`;
+}
+
+function plotList() {
+  if (!S.plotRuang) return empty('Pilih ruang terlebih dahulu.');
+  const sis = S.data.users.filter(u => u.role === 'siswa' && (!S.plotKelas || u.kelas_id === S.plotKelas));
+  if (!sis.length) return empty('Tidak ada siswa.');
+  return `<div class="grid sm:grid-cols-2 gap-2">${sis.map(s => {
+    const asg = S.data.ruang_siswa.find(r => r.siswa_id === s.id);
+    const here = asg && asg.ruang_id === S.plotRuang, other = asg && !here;
+    return `<label class="flex items-center gap-3 p-3 rounded-xl border ${here ? 'border-indigo-300 bg-indigo-50' : 'border-slate-200 bg-white/70'} ${other ? 'opacity-60' : 'cursor-pointer'}">
+      <input type="checkbox" class="w-4 h-4 accent-indigo-600" ${here ? 'checked' : ''} ${other ? 'disabled' : ''} onchange="A.toggleSiswa('${s.id}',this.checked)">
+      <div class="min-w-0"><div class="text-sm font-semibold truncate">${esc(s.nama)}</div><div class="text-[11px] text-slate-500">${esc(kName(s.kelas_id))}${other ? ' • ' + esc((byId(S.data.ruang, asg.ruang_id) || {}).nama_ruang || '') : ''}</div></div></label>`;
+  }).join('')}</div>`;
+}
+function pgRuang() {
+  const d = S.data, t = S.ruangTab;
+  const tabs = [['ruang', 'Daftar Ruang'], ['plot', 'Plotting Siswa'], ['siswa', 'Siswa per Ruang'], ['pengawas', 'Pengawas Ruang']];
+  let body = '';
+  if (t === 'ruang') {
+    body = `<div class="grid lg:grid-cols-3 gap-5"><div>${card('Tambah Ruang', `<form onsubmit="return A.addRuang(event)" class="space-y-3"><div><label class="lbl">Nama Ruang</label><input id="f-ruang" class="inp" required placeholder="mis. Ruang 1"></div><button class="btn btn-p w-full"><i data-lucide="plus" style="width:16px;height:16px"></i> Simpan</button></form>`)}</div>
+      <div class="lg:col-span-2">${card('Daftar Ruang', !d.ruang.length ? empty() : tableWrap(`<table class="tbl"><thead><tr><th>Ruang</th><th>Jumlah Siswa</th><th></th></tr></thead><tbody>${d.ruang.map(r => `<tr><td class="font-semibold">${esc(r.nama_ruang)}</td><td>${d.ruang_siswa.filter(x => x.ruang_id === r.id).length}</td><td class="text-right">${delBtn('ruang', r.id)}</td></tr>`).join('')}</tbody></table>`))}</div></div>`;
+  } else if (t === 'plot') {
+    body = card('Plotting Siswa ke Ruang', `<div class="grid sm:grid-cols-2 gap-3 mb-4"><div><label class="lbl">Ruang</label><select class="inp" onchange="A.plotRuang(this.value)"><option value="">- Pilih Ruang -</option>${d.ruang.map(r => `<option value="${r.id}" ${r.id === S.plotRuang ? 'selected' : ''}>${esc(r.nama_ruang)}</option>`).join('')}</select></div>
+      <div><label class="lbl">Filter Kelas</label><select class="inp" onchange="A.plotKelas(this.value)">${kelasOpts(S.plotKelas, true)}</select></div></div><div id="plot-list">${plotList()}</div>`);
+  } else if (t === 'siswa') {
+    body = card('Daftar Siswa Berdasarkan Ruang', !d.ruang.length ? empty('Belum ada ruang.') : d.ruang.map(r => {
+      const sis = d.ruang_siswa.filter(x => x.ruang_id === r.id).map(x => byId(d.users, x.siswa_id)).filter(Boolean);
+      return `<div class="mb-4"><div class="flex items-center justify-between mb-2"><b>${esc(r.nama_ruang)} <span class="text-slate-400 font-medium">(${sis.length})</span></b><button class="btn btn-g btn-sm" onclick="A.cetakSiswaRuang('${r.id}')"><i data-lucide="printer" style="width:14px;height:14px"></i> Cetak</button></div>${!sis.length ? empty('Belum ada siswa.') : tableWrap(`<table class="tbl"><thead><tr><th>#</th><th>Nama</th><th>Kelas</th><th>Username</th><th></th></tr></thead><tbody>${sis.map((s, i) => `<tr><td>${i + 1}</td><td class="font-semibold">${esc(s.nama)}</td><td>${esc(kName(s.kelas_id))}</td><td><code>${esc(s.username)}</code></td><td class="text-right"><button class="btn btn-d btn-sm" onclick="A.removeSiswa('${r.id}','${s.id}')"><i data-lucide="x" style="width:14px;height:14px"></i></button></td></tr>`).join('')}</tbody></table>`)}</div>`;
+    }).join(''), `<button class="btn btn-g btn-sm" onclick="A.cetakSiswaRuang('')"><i data-lucide="printer" style="width:14px;height:14px"></i> Cetak Semua</button>`);
+  } else {
+    const pw = d.users.filter(u => u.role === 'pengawas');
+    const rows = d.ruang_pengawas.slice().sort((a, b) => String(b.tanggal).localeCompare(String(a.tanggal)));
+    body = `<div class="grid lg:grid-cols-3 gap-5"><div>${card('Tugaskan Pengawas', `<form onsubmit="return A.addRuangPengawas(event)" class="space-y-3">
+      <div><label class="lbl">Tanggal</label><input id="f-rp-tgl" type="date" class="inp" required value="${todayStr()}"></div>
+      <div><label class="lbl">Sesi</label><select id="f-rp-sesi" class="inp" required><option value="">- Pilih Sesi -</option>${d.sesi.map(s => `<option value="${s.id}">${sesiLabel(s)}</option>`).join('')}</select></div>
+      <div><label class="lbl">Ruang</label><select id="f-rp-ruang" class="inp" required><option value="">- Pilih Ruang -</option>${d.ruang.map(r => `<option value="${r.id}">${esc(r.nama_ruang)}</option>`).join('')}</select></div>
+      <div><label class="lbl">Pengawas</label><select id="f-rp-pw" class="inp" required><option value="">- Pilih Pengawas -</option>${pw.map(p => `<option value="${p.id}">${esc(p.nama)}</option>`).join('')}</select></div>
+      <button class="btn btn-p w-full"><i data-lucide="plus" style="width:16px;height:16px"></i> Simpan</button></form>`)}</div>
+      <div class="lg:col-span-2">${card('Jadwal Tugas Pengawas', !rows.length ? empty() : tableWrap(`<table class="tbl"><thead><tr><th>Tanggal</th><th>Sesi</th><th>Ruang</th><th>Pengawas</th><th></th></tr></thead><tbody>${rows.map(r => { const s = byId(d.sesi, r.sesi_id) || {}; return `<tr><td>${fmtDate(r.tanggal)}</td><td>${esc(s.nama_sesi || '-')} <span class="text-slate-400">${hhmm(s.jam_mulai)}-${hhmm(s.jam_berakhir)}</span></td><td>${esc((byId(d.ruang, r.ruang_id) || {}).nama_ruang || '-')}</td><td class="font-semibold">${esc(uName(r.pengawas_id))}</td><td class="text-right">${delBtn('ruang_pengawas', r.id)}</td></tr>`; }).join('')}</tbody></table>`), `<button class="btn btn-g btn-sm" onclick="A.cetakPengawas()"><i data-lucide="printer" style="width:14px;height:14px"></i> Cetak</button>`)}</div></div>`;
+  }
+  return pageTitle('Ruang', 'Ruang ujian, plotting siswa, dan penempatan pengawas.') +
+    `<div class="flex gap-2 mb-5 overflow-x-auto pb-1">${tabs.map(x => `<button class="btn ${t === x[0] ? 'btn-p' : 'btn-g'}" onclick="A.ruangTab('${x[0]}')">${x[1]}</button>`).join('')}</div>` + body;
+}
+
+function pgUjian() {
+  const d = S.data, e = S.editUjian ? byId(d.ujian, S.editUjian) : null;
+  const rows = d.ujian.slice().sort((a, b) => String(b.tanggal).localeCompare(String(a.tanggal)));
+  return pageTitle('Jadwal Ujian', 'Atur jadwal, link Google Form, dan token ujian.') + `<div class="grid xl:grid-cols-3 gap-5"><div>${card(e ? 'Edit Jadwal Ujian' : 'Tambah Jadwal Ujian', `<form onsubmit="return A.saveUjian(event)" class="space-y-3">
+      <div><label class="lbl">Kelas</label><select id="f-uj-kls" class="inp" required>${kelasOpts(e ? e.kelas_id : '')}</select></div>
+      <div><label class="lbl">Mata Pelajaran</label><input id="f-uj-map" class="inp" required value="${esc(e ? e.mapel : '')}"></div>
+      <div><label class="lbl">Tanggal</label><input id="f-uj-tgl" type="date" class="inp" required value="${e ? e.tanggal : todayStr()}"></div>
+      <div><label class="lbl">Sesi</label><select id="f-uj-sesi" class="inp" required><option value="">- Pilih Sesi -</option>${d.sesi.map(s => `<option value="${s.id}" ${e && e.sesi_id === s.id ? 'selected' : ''}>${sesiLabel(s)}</option>`).join('')}</select></div>
+      <div><label class="lbl">Link Ujian (Google Form / lainnya)</label><input id="f-uj-link" type="url" class="inp" required placeholder="https://..." value="${esc(e ? e.link : '')}"></div>
+      <div class="flex gap-2"><button class="btn btn-p flex-1"><i data-lucide="check" style="width:16px;height:16px"></i> ${e ? 'Perbarui' : 'Simpan'}</button>${e ? `<button type="button" class="btn btn-g" onclick="A.resetUjian()">Batal</button>` : ''}</div></form>`)}</div>
+    <div class="xl:col-span-2">${card('Daftar Jadwal Ujian', !rows.length ? empty() : tableWrap(`<table class="tbl"><thead><tr><th>Mapel</th><th>Kelas</th><th>Waktu</th><th>Token</th><th>Status</th><th></th></tr></thead><tbody>${rows.map(u => { const s = byId(d.sesi, u.sesi_id) || {}; return `<tr><td class="font-semibold">${esc(u.mapel)}<div class="text-[11px] text-slate-400 max-w-[180px] truncate">${esc(u.link)}</div></td><td>${esc(kName(u.kelas_id))}</td><td>${fmtDate(u.tanggal)}<div class="text-xs text-slate-500">${esc(s.nama_sesi || '-')} ${hhmm(s.jam_mulai)}-${hhmm(s.jam_berakhir)}${u.extra_menit ? ` (+${u.extra_menit}m)` : ''}</div></td><td><b class="font-mono tracking-widest text-indigo-700">${esc(u.token)}</b></td><td>${statusBadge(u.status)}</td>
+      <td class="text-right whitespace-nowrap"><button class="btn btn-g btn-sm" title="Token baru" onclick="A.tokenManual('${u.id}')"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i></button> <button class="btn btn-g btn-sm" title="Edit" onclick="A.editUjian('${u.id}')"><i data-lucide="pencil" style="width:14px;height:14px"></i></button> <button class="btn btn-g btn-sm" title="${u.status === 'Aktif' ? 'Akhiri' : 'Aktifkan'}" onclick="A.toggleStatus('${u.id}')"><i data-lucide="${u.status === 'Aktif' ? 'x' : 'play'}" style="width:14px;height:14px"></i></button> ${delBtn('ujian', u.id)}</td></tr>`; }).join('')}</tbody></table>`), `<button class="btn btn-g btn-sm" onclick="A.reload()"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i> Segarkan</button>`)}</div></div>`;
+}
+
+function pgSettings() {
+  const s = S.settings;
+  return pageTitle('Pengaturan', 'Identitas aplikasi dan sekolah.') + `<div class="max-w-2xl">${card('Konfigurasi Identitas', `<form onsubmit="return A.saveSettings(event)" class="space-y-4">
+    <div><label class="lbl">Nama Aplikasi</label><input id="st-app" class="inp" required value="${esc(s.nama_app)}"></div>
+    <div><label class="lbl">Nama Sekolah</label><input id="st-sch" class="inp" required value="${esc(s.nama_sekolah)}"></div>
+    <div><label class="lbl">Alamat</label><textarea id="st-alm" class="inp" rows="2">${esc(s.alamat)}</textarea></div>
+    <div><label class="lbl">Zona Waktu Ujian</label><select id="st-tz" class="inp">${[['Asia/Jakarta', 'WIB (Asia/Jakarta)'], ['Asia/Makassar', 'WITA (Asia/Makassar)'], ['Asia/Jayapura', 'WIT (Asia/Jayapura)']].map(z => `<option value="${z[0]}" ${s.zona_waktu === z[0] ? 'selected' : ''}>${z[1]}</option>`).join('')}</select></div>
+    <div><label class="lbl">Batas Pelanggaran Sebelum Ujian Terkunci</label><input id="st-mx" type="number" min="1" max="10" class="inp" required value="${esc(s.maks_pelanggaran || 3)}"></div>
+    <div><label class="lbl">Logo (otomatis dikecilkan)</label><div class="flex items-center gap-3"><div id="st-logo-prev">${brand(56)}</div><input type="file" accept="image/*" class="text-sm" onchange="A.logoFile(this)"><button type="button" class="btn btn-d btn-sm" onclick="A.logoClear()">Hapus Logo</button></div><input type="hidden" id="st-logo" value="${esc(s.logo)}"></div>
+    <button class="btn btn-p"><i data-lucide="check" style="width:16px;height:16px"></i> Simpan Pengaturan</button></form>`)}</div>`;
+}
+
+/* =====================================================================
+   MONITORING (Admin & Pengawas)
+===================================================================== */
+const VIOL_LABEL = { fullscreen_keluar: 'Keluar dari layar penuh', pindah_tab: 'Berpindah tab / aplikasi', jendela_blur: 'Jendela kehilangan fokus', devtools: 'Terdeteksi developer tools', shortcut: 'Menekan tombol terlarang', salin_tempel: 'Menyalin / menempel', screenshot: 'Mencoba screenshot', tombol_kembali: 'Menekan tombol kembali', reload: 'Memuat ulang halaman' };
+const MON_BADGE = { selesai: ['Selesai', 'bg-slate-200 text-slate-600'], terkunci: ['Terkunci', 'bg-red-100 text-red-700'], aktif: ['Mengerjakan', 'bg-emerald-100 text-emerald-700'], offline: ['Offline', 'bg-amber-100 text-amber-700'], belum: ['Belum Masuk', 'bg-slate-100 text-slate-500'] };
+function monState(r) { if (r.selesai) return 'selesai'; if (r.terkunci) return 'terkunci'; if (r.last_seen && now() - new Date(r.last_seen).getTime() < 45000) return 'aktif'; if (r.mulai_at) return 'offline'; return 'belum'; }
+const agoStr = (t) => { if (!t) return '-'; const x = Math.max(0, Math.round((now() - new Date(t).getTime()) / 1000)); return x < 60 ? x + ' dtk lalu' : x < 3600 ? Math.floor(x / 60) + ' mnt lalu' : Math.floor(x / 3600) + ' jam lalu'; };
+function monTable() {
+  const m = S.mon; if (!S.monId) return empty('Pilih ujian terlebih dahulu.'); if (!m) return empty('Memuat data...');
+  const cnt = { aktif: 0, terkunci: 0, selesai: 0, offline: 0, belum: 0 }; m.rows.forEach(r => cnt[monState(r)]++);
+  const chip = (k, c) => `<div class="rounded-xl px-3 py-2 text-center ${c}"><div class="text-xl font-extrabold">${cnt[k]}</div><div class="text-[10px] font-bold uppercase">${MON_BADGE[k][0]}</div></div>`;
+  const head = `<div class="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-4">${chip('aktif', 'bg-emerald-50 text-emerald-700')}${chip('terkunci', 'bg-red-50 text-red-700')}${chip('selesai', 'bg-slate-100 text-slate-600')}${chip('offline', 'bg-amber-50 text-amber-700')}${chip('belum', 'bg-slate-50 text-slate-500')}</div>`;
+  if (!m.rows.length) return head + empty('Tidak ada siswa pada kelas ujian ini.');
+  return head + tableWrap(`<table class="tbl"><thead><tr><th>Nama</th><th>Ruang</th><th>Status</th><th>Pelanggaran</th><th>Aktif Terakhir</th><th></th></tr></thead><tbody>${m.rows.map(r => { const st = monState(r), b = MON_BADGE[st];
+    return `<tr><td class="font-semibold">${esc(r.nama)}<div class="text-[11px] text-slate-400">${esc(r.username)}</div></td><td>${esc(r.ruang)}</td><td><span class="badge ${b[1]}">${b[0]}</span></td>
+      <td><b class="${r.pelanggaran >= m.maks ? 'text-red-600' : r.pelanggaran ? 'text-amber-600' : 'text-slate-500'}">${r.pelanggaran}/${m.maks}</b>${r.last_jenis ? `<div class="text-[11px] text-slate-400">${esc(VIOL_LABEL[r.last_jenis] || r.last_jenis)}</div>` : ''}</td><td class="text-xs text-slate-500">${agoStr(r.last_seen)}</td>
+      <td class="text-right whitespace-nowrap">${r.pelanggaran ? `<button class="btn btn-g btn-sm" title="Riwayat" onclick="A.monDetail('${r.siswa_id}')"><i data-lucide="history" style="width:14px;height:14px"></i></button> ` : ''}${r.terkunci ? `<button class="btn btn-s btn-sm" onclick="A.monAct('${r.siswa_id}','buka_kunci')"><i data-lucide="lock-open" style="width:14px;height:14px"></i> Buka Kunci</button> ` : ''}${r.mulai_at && !r.terkunci ? `<button class="btn btn-g btn-sm" title="Izinkan masuk ulang" onclick="A.monAct('${r.siswa_id}','masuk_ulang')"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i> Masuk Ulang</button> ` : ''}${r.pelanggaran || r.mulai_at ? `<button class="btn btn-d btn-sm" title="Reset" onclick="A.monAct('${r.siswa_id}','reset')"><i data-lucide="x" style="width:14px;height:14px"></i></button>` : ''}</td></tr>`; }).join('')}</tbody></table>`);
+}
+function monList() {
+  const l = S.role === 'admin' ? S.data.ujian.map(u => ({ id: u.id, t: u.tanggal, label: `${u.mapel} - ${kName(u.kelas_id)} (${u.tanggal})` })) : ((S.pw && S.pw.exams) || []).map(u => ({ id: u.id, t: u.tanggal, label: `${u.mapel} - ${u.kelas} (${u.tanggal})` }));
+  return l.sort((a, b) => b.t.localeCompare(a.t));
+}
+function pgMonitor() {
+  const l = monList();
+  return pageTitle('Monitoring Ujian', 'Pantau peserta secara langsung: status, pelanggaran, dan kunci ujian. Diperbarui otomatis tiap 8 detik.') +
+    card('Pilih Ujian', `<select class="inp" onchange="A.monSelect(this.value)"><option value="">- Pilih Ujian -</option>${l.map(x => `<option value="${x.id}" ${x.id === S.monId ? 'selected' : ''}>${esc(x.label)}</option>`).join('')}</select>`) +
+    card('Peserta', `<div id="mon-table">${monTable()}</div>`, `<button class="btn btn-g btn-sm" onclick="A.loadMon()"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i> Segarkan</button>`);
+}
+
+/* =====================================================================
+   PENGAWAS PAGES
+===================================================================== */
+function pgPJadwal() {
+  const ex = (S.pw && S.pw.exams) || [];
+  const t = todayStr();
+  const body = !ex.length ? card('Jadwal Ujian', empty('Belum ada jadwal ujian.')) : ex.map(u => {
+    const live = u.status === 'Aktif' && now() >= new Date(u.start_at).getTime() && now() < new Date(u.end_at).getTime();
+    const until = new Date(u.token_updated_at).getTime() + 300000;
+    return `<div class="glass rounded-2xl p-5 mb-4 ${u.tanggal === t ? 'ring-2 ring-indigo-200' : ''}"><div class="flex flex-wrap items-start justify-between gap-3">
+      <div><div class="font-extrabold text-xl text-slate-800">${esc(u.mapel)}</div><div class="text-sm text-slate-500">Kelas ${esc(u.kelas)} • ${fmtDate(u.tanggal)}</div><div class="text-sm text-slate-500">${esc(u.sesi)} • ${hhmm(u.jam_mulai)}-${hhmm(u.jam_berakhir)}${u.extra_menit ? ` <b class="text-amber-600">(+${u.extra_menit} menit)</b>` : ''}</div>
+      <div class="mt-2">${u.status !== 'Aktif' ? '<span class="badge bg-slate-200 text-slate-600">Selesai</span>' : live ? '<span class="badge bg-emerald-100 text-emerald-700">Berlangsung</span>' : now() < new Date(u.start_at).getTime() ? '<span class="badge bg-amber-100 text-amber-700">Belum Mulai</span>' : '<span class="badge bg-slate-200 text-slate-600">Waktu Berakhir</span>'}</div></div>
+      <div class="text-center"><div class="text-[11px] font-bold uppercase text-slate-500">Token Ujian</div>${u.status === 'Aktif' ? `<div class="token-box">${esc(u.token)}</div><div class="text-xs text-slate-500">Berganti dalam <b class="tk-count" data-until="${until}">--:--</b></div>` : '<div class="token-box text-slate-300">-----</div>'}</div></div>
+      ${u.status === 'Aktif' ? `<div class="flex flex-wrap gap-2 mt-4"><button class="btn btn-g btn-sm" onclick="A.pNewToken('${u.id}')"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i> Ganti Token</button><button class="btn btn-p btn-sm" onclick="A.pMon('${u.id}')"><i data-lucide="activity" style="width:14px;height:14px"></i> Pantau Peserta</button><button class="btn btn-s btn-sm" onclick="A.pExtend('${u.id}')"><i data-lucide="timer" style="width:14px;height:14px"></i> Tambah Waktu</button><button class="btn btn-d btn-sm" onclick="A.pEnd('${u.id}')"><i data-lucide="x" style="width:14px;height:14px"></i> Akhiri Ujian</button></div>` : ''}</div>`;
+  }).join('');
+  return pageTitle('Jadwal & Token', 'Semua jadwal ujian. Halaman diperbarui otomatis setiap 20 detik.') + body;
+}
+function pgPTugas() {
+  const t = (S.pw && S.pw.tugas) || [];
+  return pageTitle('Tugas Saya', 'Jadwal pengawasan ruang Anda.') + card('Jadwal Tugas Pengawas', !t.length ? empty('Belum ada tugas pengawasan.') : tableWrap(`<table class="tbl"><thead><tr><th>Tanggal</th><th>Sesi</th><th>Jam</th><th>Ruang</th></tr></thead><tbody>${t.map(x => `<tr><td>${fmtDate(x.tanggal)}</td><td>${esc(x.sesi)}</td><td>${hhmm(x.jam_mulai)}-${hhmm(x.jam_berakhir)}</td><td class="font-semibold">${esc(x.ruang)}</td></tr>`).join('')}</tbody></table>`));
+}
+
+/* =====================================================================
+   SISWA PAGES
+===================================================================== */
+function pgSUjian() {
+  const ex = (S.sw && S.sw.exams) || [];
+  const n = now();
+  const body = !ex.length ? card('Ujian', empty('Belum ada jadwal ujian untuk kelas Anda.')) : `<div class="grid md:grid-cols-2 gap-4">${ex.map(u => {
+    const st = new Date(u.start_at).getTime(), en = new Date(u.end_at).getTime();
+    let badge, can = false;
+    if (u.status !== 'Aktif') badge = '<span class="badge bg-slate-200 text-slate-600">Diakhiri</span>';
+    else if (n < st) badge = '<span class="badge bg-amber-100 text-amber-700">Belum Dimulai</span>';
+    else if (n >= en) badge = '<span class="badge bg-slate-200 text-slate-600">Selesai</span>';
+    else { badge = '<span class="badge bg-emerald-100 text-emerald-700">Berlangsung</span>'; can = true; }
+    return `<div class="glass rounded-2xl p-5"><div class="flex items-start justify-between gap-2"><h3 class="font-extrabold text-xl text-indigo-900">${esc(u.mapel)}</h3>${badge}</div>
+      <div class="text-sm text-slate-600 mt-2 space-y-1"><div class="flex items-center gap-2"><i data-lucide="calendar-check" style="width:15px;height:15px"></i>${fmtDate(u.tanggal)}</div><div class="flex items-center gap-2"><i data-lucide="clock" style="width:15px;height:15px"></i>${esc(u.sesi)} • ${hhmm(u.jam_mulai)}-${hhmm(u.jam_berakhir)}</div></div>
+      <button class="btn ${can ? 'btn-p' : 'btn-g'} w-full mt-4" ${can ? '' : 'disabled style="opacity:.55;cursor:not-allowed"'} onclick="A.prepareExam('${u.id}')"><i data-lucide="play" style="width:16px;height:16px"></i> Mulai Ujian</button></div>`;
+  }).join('')}</div>`;
+  return pageTitle('Ujian Saya', `Halo, ${esc(S.user.nama)}. Pilih ujian lalu masukkan token dari pengawas.`) + body;
+}
+function pgSProfil() {
+  const u = S.user;
+  return pageTitle('Profil') + `<div class="max-w-lg">${card('Data Peserta', `<div class="space-y-3 text-sm"><div class="flex justify-between border-b border-slate-100 pb-2"><span class="text-slate-500">Nama</span><b>${esc(u.nama)}</b></div><div class="flex justify-between border-b border-slate-100 pb-2"><span class="text-slate-500">Username</span><b>${esc(u.username)}</b></div><div class="flex justify-between border-b border-slate-100 pb-2"><span class="text-slate-500">Kelas</span><b>${esc(u.kelas || '-')}</b></div><div class="flex justify-between"><span class="text-slate-500">Sekolah</span><b>${esc(S.settings.nama_sekolah)}</b></div></div>
+    <button class="btn btn-d w-full mt-5" onclick="A.logout()"><i data-lucide="log-out" style="width:16px;height:16px"></i> Keluar</button>`)}</div>`;
+}
+
+/* =====================================================================
+   RUANG UJIAN SISWA + ANTI CURANG
+   Lapis 1 (browser): layar penuh wajib, deteksi pindah tab/jendela, devtools,
+     pemblokiran copy/paste/klik kanan/shortcut/print/back, watermark identitas.
+   Lapis 2 (server): kunci otomatis, sesi tunggal, status 'selesai', log
+     pelanggaran, pemantauan & buka-kunci oleh pengawas.
+===================================================================== */
+const FS_OK = !!(document.documentElement.requestFullscreen || document.documentElement.webkitRequestFullscreen);
+const COARSE = !!(window.matchMedia && window.matchMedia('(pointer:coarse)').matches);
+const isFs = () => !!(document.fullscreenElement || document.webkitFullscreenElement);
+function goFs() { const e = document.documentElement; try { const f = e.requestFullscreen || e.webkitRequestFullscreen; if (f) return Promise.resolve(f.call(e)).catch(() => {}); } catch (x) {} return Promise.resolve(); }
+function leaveFs() { try { if (isFs()) (document.exitFullscreen || document.webkitExitFullscreen).call(document); } catch (x) {} }
+const newSid = () => 's' + Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+function wmUrl(text) {
+  const t = String(text).replace(/[<>&"']/g, '');
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170"><text x="150" y="90" text-anchor="middle" transform="rotate(-24 150 85)" font-family="Arial" font-size="15" font-weight="700" fill="rgba(79,70,229,0.16)">${t}</text></svg>`;
+  return 'url("data:image/svg+xml;utf8,' + encodeURIComponent(svg) + '")';
+}
+const ovBox = (emoji, title, text, extra = '') => `<div class="glass-strong rounded-3xl p-7 max-w-md text-center mx-4"><div class="text-5xl mb-3">${emoji}</div><h3 class="text-2xl font-extrabold text-slate-800 mb-2">${title}</h3><p class="text-slate-600 text-sm mb-5">${text}</p>${extra}</div>`;
+function roomOv(html, kind) { const o = $('room-ov'); if (!o || !S.room) return; S.room.ovKind = kind; o.innerHTML = html; o.style.display = 'flex'; icons(); }
+function roomOvHide() { const o = $('room-ov'); if (o) { o.style.display = 'none'; o.innerHTML = ''; } if (S.room) { clearInterval(S.room.warnT); S.room.ovKind = null; } }
+function roomHdr() { const R = S.room, el = $('room-viol'); if (!R || !el) return; el.textContent = `Pelanggaran ${R.count}/${R.maks}`; el.style.color = R.count ? '#dc2626' : '#64748b'; }
+function showNeedFs() { const R = S.room; if (!R || R.over || R.locked) return; roomOv(ovBox('🖥️', 'Layar Penuh Wajib', 'Ujian hanya dapat dikerjakan dalam mode layar penuh. Klik tombol di bawah untuk melanjutkan.', '<button class="btn btn-p w-full" onclick="A.roomFs()">Masuk Layar Penuh</button>'), 'fs'); }
+function showLock() { const R = S.room; if (!R || R.over) return; clearInterval(R.warnT); roomOv(ovBox('🔒', 'Ujian Terkunci', 'Anda melakukan pelanggaran melebihi batas yang diizinkan dan telah dilaporkan ke pengawas. Hubungi pengawas untuk membuka kunci. Halaman ini otomatis dilanjutkan setelah kunci dibuka.', '<button class="btn btn-g w-full" onclick="A.closeRoom()">Keluar dari Ruang Ujian</button>'), 'lock'); roomHdr(); }
+function showWarn(jenis) {
+  const R = S.room; if (!R || R.over) return;
+  if (R.locked || R.count >= R.maks) { R.locked = true; showLock(); return; }
+  let sec = 5;
+  const draw = () => roomOv(ovBox('⚠️', 'Pelanggaran Terdeteksi', `<b>${esc(VIOL_LABEL[jenis] || jenis)}</b><br>Pelanggaran <b>${R.count} dari ${R.maks}</b>. Pada pelanggaran ke-${R.maks}, ujian Anda akan <b>terkunci</b> dan dilaporkan ke pengawas.`,
+    `<button class="btn btn-p w-full" ${sec > 0 ? 'disabled style="opacity:.5"' : ''} onclick="A.roomAck()">${sec > 0 ? 'Harap tunggu ' + sec + ' detik' : 'Saya Mengerti, Lanjutkan'}</button>`), 'warn');
+  draw(); clearInterval(R.warnT); R.warnT = setInterval(() => { sec--; if (sec <= 0) clearInterval(R.warnT); if (S.room && S.room.ovKind === 'warn') draw(); }, 1000); roomHdr();
+}
+function roomCleanup() {
+  const R = S.room; if (!R) return;
+  clearInterval(R.t1); clearInterval(R.t2); clearInterval(R.t3); clearInterval(R.warnT);
+  (R.cleanups || []).forEach(f => { try { f(); } catch (e) {} }); R.cleanups = [];
+  leaveFs();
+}
+function startRoom(ex, link, endAt, opt = {}) {
+  const R = S.room = { ex, link, endAt: new Date(endAt).getTime(), over: false, sid: opt.sid || newSid(), count: opt.count || 0, maks: opt.maks || S.settings.maks_pelanggaran || 3, locked: !!opt.locked, lastV: 0, t0: Date.now(), cleanups: [], ovKind: null };
+  sessionStorage.setItem('cbt_room', JSON.stringify({ id: ex.id, mapel: ex.mapel, link, end: endAt, sid: R.sid }));
+  const el = document.createElement('div'); el.id = 'room'; el.className = 'noselect';
+  el.style.cssText = 'position:fixed;inset:0;z-index:70;background:#fff;display:flex;flex-direction:column';
+  el.innerHTML = `<div class="glass-strong flex items-center justify-between gap-3 px-4 py-2.5" style="border-radius:0 0 1rem 1rem;z-index:2"><div class="min-w-0"><div class="font-extrabold text-indigo-900 truncate">${esc(ex.mapel)}</div><div class="text-[11px] text-slate-500 truncate">${esc(S.user.nama)} • ${esc(S.user.kelas || '')} • <b id="room-viol">Pelanggaran 0/3</b></div></div>
+    <div class="flex items-center gap-3"><div class="text-center"><div class="text-[10px] font-bold uppercase text-slate-400">Sisa Waktu</div><div id="room-timer" class="font-mono font-extrabold text-xl text-indigo-700">--:--:--</div></div><button class="btn btn-d btn-sm" onclick="A.finishExam()">Selesai</button></div></div>
+    <div id="room-body" style="flex:1;position:relative;overflow:hidden"><iframe id="room-frame" src="${esc(link)}" sandbox="allow-scripts allow-forms allow-same-origin allow-modals" referrerpolicy="no-referrer" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="fullscreen"></iframe>
+      <div style="position:absolute;inset:0;pointer-events:none;z-index:3;background-image:${wmUrl(S.user.nama + ' • ' + S.user.username)};background-repeat:repeat"></div></div>
+    <div id="room-ov" style="display:none;position:absolute;inset:0;z-index:9;background:rgba(255,255,255,.98);align-items:center;justify-content:center;padding:16px"></div>`;
+  $('cbt-root').appendChild(el); roomHdr();
+
+  const on = (t, ev, fn, o) => { t.addEventListener(ev, fn, o); R.cleanups.push(() => t.removeEventListener(ev, fn, o)); };
+  const violate = (jenis, detail = '') => {
+    if (R.over || Date.now() - R.t0 < 2500 || Date.now() - R.lastV < 3000) return;
+    R.lastV = Date.now(); R.count++; showWarn(jenis);
+    API.logViolation(S.cred, ex.id, R.sid, jenis, detail).then(r => {
+      if (!r || R.over) return;
+      if (r.duplicate) { timeUp('Sesi Ganda / Direset', 'Ujian ini dibuka di perangkat lain atau sesi Anda direset oleh pengawas.'); return; }
+      R.count = r.pelanggaran; R.maks = r.maks; roomHdr();
+      if (r.terkunci && !R.locked) { R.locked = true; showLock(); }
+    }).catch(() => {});
+  };
+  R.violate = violate;
+
+  // --- Deteksi keluar dari fokus ujian ---
+  on(document, 'visibilitychange', () => { if (document.hidden) violate('pindah_tab'); });
+  on(window, 'blur', () => setTimeout(() => { const f = $('room-frame'); if (R.over) return; if (document.activeElement === f) return; if (!document.hasFocus()) violate('jendela_blur'); }, 200));
+  if (FS_OK) { on(document, 'fullscreenchange', () => { if (!isFs() && !R.over) violate('fullscreen_keluar'); }); on(document, 'webkitfullscreenchange', () => { if (!isFs() && !R.over) violate('fullscreen_keluar'); }); }
+  // --- Blokir aksi terlarang di halaman induk ---
+  ['contextmenu', 'selectstart', 'dragstart'].forEach(ev => on(document, ev, e => { e.preventDefault(); }));
+  ['copy', 'cut', 'paste'].forEach(ev => on(document, ev, e => { e.preventDefault(); violate('salin_tempel', ev); }));
+  on(document, 'keydown', e => {
+    const k = e.key || '', c = e.ctrlKey || e.metaKey;
+    if (k === 'F12' || k === 'F5' || (c && e.shiftKey && /^[ijckIJCK]$/.test(k)) || (c && /^[uUsSpPaAcCvVxXrRfF]$/.test(k))) { e.preventDefault(); e.stopPropagation(); violate('shortcut', k); }
+  }, true);
+  on(document, 'keyup', e => { if (e.key === 'PrintScreen') { try { navigator.clipboard.writeText('Dilarang menyalin soal ujian'); } catch (x) {} violate('screenshot'); } });
+  on(window, 'beforeunload', e => { e.preventDefault(); e.returnValue = ''; });
+  try { history.pushState(null, '', location.href); } catch (x) {}
+  on(window, 'popstate', () => { try { history.pushState(null, '', location.href); } catch (x) {} violate('tombol_kembali'); });
+  on(window, 'offline', () => toast('Koneksi terputus. Jawaban yang belum terkirim mungkin gagal tersimpan.', 'warn'));
+  // --- Heuristik developer tools (hanya desktop, saat layar penuh) ---
+  R.t3 = setInterval(() => { if (R.over || COARSE || !isFs()) return; if (window.outerWidth - window.innerWidth > 220 || window.outerHeight - window.innerHeight > 220) violate('devtools'); }, 2500);
+
+  // --- Timer ---
+  const tick = () => {
+    const left = R.endAt - now(); const t = $('room-timer'); if (!t) return;
+    t.textContent = fmtDur(left); t.style.color = left < 300000 ? '#dc2626' : '#4338ca';
+    if (left <= 0) timeUp('Waktu Habis!', 'Waktu ujian telah berakhir. Jawaban Anda sudah tidak dapat diubah.');
+  };
+  R.t1 = setInterval(tick, 1000); tick();
+  // --- Detak jantung ke server (sesi ganda, kunci, perpanjangan, akhir ujian) ---
+  R.t2 = setInterval(async () => {
+    try {
+      const st = await API.examState(S.cred, ex.id, R.sid); sync(st.server_now); if (R.over) return;
+      R.endAt = new Date(st.end_at).getTime();
+      if (st.duplicate) { timeUp('Sesi Ganda / Direset', 'Ujian ini dibuka di perangkat lain atau sesi Anda direset oleh pengawas.'); return; }
+      if (st.status !== 'Aktif') { timeUp('Ujian Diakhiri', 'Ujian telah diakhiri oleh pengawas.'); return; }
+      R.maks = st.maks; R.count = st.pelanggaran; roomHdr();
+      if (st.terkunci && !R.locked) { R.locked = true; showLock(); }
+      else if (!st.terkunci && R.locked) { R.locked = false; roomOv(ovBox('🔓', 'Kunci Dibuka', 'Pengawas telah membuka kunci ujian Anda. Pelanggaran berikutnya akan langsung mengunci kembali.', '<button class="btn btn-p w-full" onclick="A.roomAck()">Lanjutkan Ujian</button>'), 'warn'); }
+    } catch (e) {}
+  }, 10000);
+
+  // --- Awal masuk ---
+  if (R.locked) showLock();
+  else if (FS_OK && !isFs()) { goFs().then(() => { if (!isFs() && S.room === R && !R.ovKind) showNeedFs(); }); }
+  if (opt.restored) { R.t0 = Date.now() - 3000; violate('reload'); }
+}
+function timeUp(title, text) {
+  const R = S.room; if (!R || R.over) return; R.over = true; roomCleanup(); roomOvHide();
+  const b = $('room-body'); if (b) b.innerHTML = `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center"><div class="glass-strong rounded-3xl p-8 max-w-md"><div class="text-5xl mb-3">⏰</div><h3 class="text-3xl font-extrabold text-slate-800 mb-2">${esc(title)}</h3><p class="text-slate-600 mb-5">${esc(text)}</p><button class="btn btn-p" onclick="A.closeRoom()">Kembali ke Beranda</button></div></div>`;
+}
+function closeRoom(silent) {
+  roomCleanup(); S.room = null; sessionStorage.removeItem('cbt_room');
+  const el = $('room'); if (el) el.remove();
+  if (!silent) A.go('s_ujian');
+}
+
+/* =====================================================================
+   ROUTER / RENDER
+===================================================================== */
+function render() {
+  if (!S.role) { renderLogin(); return; }
+  const P_ = { dashboard: pgDashboard, kelas: pgKelas, users: pgUsers, sesi: pgSesi, ruang: pgRuang, ujian: pgUjian, settings: pgSettings, p_jadwal: pgPJadwal, p_tugas: pgPTugas, monitor: pgMonitor, p_monitor: pgMonitor, s_ujian: pgSUjian, s_profil: pgSProfil };
+  const sc = $('cbt-root').scrollTop;
+  $('app').innerHTML = shell((P_[S.page] || pgDashboard)());
+  $('cbt-root').scrollTop = sc; icons(); tickTokens();
+}
+function tickTokens() {
+  document.querySelectorAll('.tk-count').forEach(el => { const left = Number(el.dataset.until) - now(); el.textContent = left > 0 ? fmtDur(left).slice(3) : '00:00'; });
+}
+async function refresh() { S.data = await API.loadAll(); }
+async function loadRole() {
+  clearInterval(S.poll);
+  if (S.role === 'admin') { await refresh(); }
+  else if (S.role === 'pengawas') { S.pw = await API.getPengawas(S.cred); sync(S.pw.server_now); S.poll = setInterval(async () => { try { if (S.role === 'pengawas' && S.page === 'p_jadwal' && !$('modal').innerHTML) { S.pw = await API.getPengawas(S.cred); sync(S.pw.server_now); render(); } } catch (e) {} }, 20000); }
+  else if (S.role === 'siswa') { S.sw = await API.getExams(S.cred); sync(S.sw.server_now); S.poll = setInterval(async () => { try { if (S.role === 'siswa' && S.page === 's_ujian' && !S.room) { S.sw = await API.getExams(S.cred); sync(S.sw.server_now); render(); } } catch (e) {} }, 30000); }
+}
+setInterval(() => { tickTokens(); }, 1000);
+setInterval(() => { if ((S.page === 'monitor' || S.page === 'p_monitor') && S.monId && S.role && !$('modal').innerHTML) A.loadMon(true); }, 8000);
+setInterval(() => { if (S.role === 'pengawas' && S.page === 'p_jadwal') { const exp = [...document.querySelectorAll('.tk-count')].some(el => Number(el.dataset.until) - now() < -1500); if (exp && !S.expBusy) { S.expBusy = true; API.getPengawas(S.cred).then(r => { S.pw = r; sync(r.server_now); render(); }).catch(() => {}).finally(() => { S.expBusy = false; }); } } }, 3000);
+
+async function enter(role, user, cred) {
+  S.role = role; S.user = user; S.cred = cred;
+  S.page = role === 'admin' ? 'dashboard' : role === 'pengawas' ? 'p_jadwal' : 's_ujian';
+  await loadRole(); render();
+}
+
+/* =====================================================================
+   AKSI (dipanggil dari onclick/onsubmit lewat objek A)
+===================================================================== */
+const A = window.A = {
+  loginTab(t) { S.loginTab = t; renderLogin(); },
+  togglePw() { const i = $('lg-p'); i.type = i.type === 'password' ? 'text' : 'password'; },
+  async doLogin(ev) {
+    ev.preventDefault();
+    const u = $('lg-u').value.trim(), p = $('lg-p').value;
+    await run(async () => {
+      if (S.loginTab === 'admin') {
+        const au = await API.adminLogin(u, p);
+        await enter('admin', { nama: 'Administrator', username: au.email || u }, null);
+      } else {
+        const r = await API.loginUser(u, p);
+        if (!r || !r.success) { toast((r && r.message) || 'Login gagal!', 'err'); return; }
+        if (r.user.role === 'siswa' && !r.user.kelas_id) { toast('Akun Anda belum memiliki kelas. Hubungi admin.', 'warn'); return; }
+        const cred = { u, p };
+        sessionStorage.setItem('cbt_sess', JSON.stringify({ cred, user: r.user }));
+        await enter(r.user.role, r.user, cred);
+      }
+    }, 'Memeriksa akun...');
+    return false;
+  },
+  async logout() {
+    if (!(await ask({ title: 'Keluar', text: 'Yakin ingin keluar dari aplikasi?', ok: 'Keluar', danger: true }))) return;
+    clearInterval(S.poll); if (S.room) closeRoom(true);
+    sessionStorage.removeItem('cbt_sess'); sessionStorage.removeItem('cbt_room');
+    try { if (S.role === 'admin') await API.adminLogout(); } catch (e) {}
+    S.role = null; S.user = null; S.cred = null; S.loginTab = 'user'; render();
+  },
+  go(p) { S.page = p; render(); if (p === 'monitor' || p === 'p_monitor') { if (!S.monId) { const l = monList(); const t = todayStr(); const d = l.find(x => x.t === t) || l[0]; if (d) S.monId = d.id; } if (S.monId) { S.mon = null; render(); A.loadMon(true); } } if (S.role === 'admin' && ['dashboard', 'ujian'].includes(p)) A.reload(true); if (S.role === 'pengawas' && p === 'p_jadwal') { API.getPengawas(S.cred).then(r => { S.pw = r; sync(r.server_now); if (S.page === 'p_jadwal') render(); }).catch(() => {}); } if (S.role === 'siswa' && p === 's_ujian') { API.getExams(S.cred).then(r => { S.sw = r; sync(r.server_now); if (S.page === 's_ujian') render(); }).catch(() => {}); } },
+  async reload(silent) { const f = async () => { await refresh(); render(); }; if (silent) { try { await f(); } catch (e) {} } else await run(f, 'Menyegarkan...'); },
+  install() { const e = S.installEvt; if (!e) return; e.prompt(); e.userChoice.finally(() => { S.installEvt = null; render(); }); },
+
+  async del(t, id) {
+    const msg = { kelas: 'Menghapus kelas juga menghapus jadwal ujian kelas tersebut.', users: 'Pengguna akan dihapus dari ruang & penugasan.', ruang: 'Plotting siswa & penugasan pengawas ruang ini ikut terhapus.', sesi: 'Jadwal ujian & penugasan yang memakai sesi ini ikut terhapus.' }[t] || '';
+    if (!(await ask({ title: 'Hapus data?', text: 'Data yang dihapus tidak dapat dikembalikan. ' + msg, ok: 'Hapus', danger: true }))) return;
+    await run(async () => { await API.del(t, id); await refresh(); render(); toast('Data dihapus.'); });
+  },
+  async addKelas(ev) { ev.preventDefault(); const n = $('f-kelas').value.trim(); await run(async () => { await API.ins('kelas', { nama_kelas: n }); await refresh(); render(); toast('Kelas disimpan.'); }); return false; },
+  userTab(t) { S.userTab = t; S.userQ = ''; S.userKelas = ''; render(); },
+  userSearch(v) { S.userQ = v; $('user-table').innerHTML = userTable(); icons(); },
+  userKelasFilter(v) { S.userKelas = v; $('user-table').innerHTML = userTable(); icons(); },
+  async addUser(ev) {
+    ev.preventDefault();
+    const row = { username: $('f-user').value.trim(), password_hash: $('f-pass').value, role: S.userTab, nama: $('f-nama').value.trim(), kelas_id: S.userTab === 'siswa' ? $('f-kls').value : null };
+    await run(async () => { await API.ins('users', row); await refresh(); render(); toast('Pengguna disimpan.'); }); return false;
+  },
+  async changePw(id) {
+    const u = byId(S.data.users, id);
+    const v = await ask({ title: 'Ganti Password', text: `Password baru untuk <b>${esc(u.nama)}</b>:`, input: { value: '', placeholder: 'Password baru' }, ok: 'Simpan' });
+    if (!v) return;
+    await run(async () => { await API.upd('users', id, { password_hash: v }); toast('Password diperbarui.'); });
+  },
+  template() {
+    const ws = XLSX.utils.aoa_to_sheet([['username', 'password', 'nama', 'role', 'kelas'], ['siswa101', 'rahasia1', 'Contoh Siswa', 'siswa', 'X-A'], ['pengawas101', 'rahasia2', 'Contoh Pengawas', 'pengawas', '']]);
+    const wb = XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, 'Pengguna'); XLSX.writeFile(wb, 'template_import_pengguna.xlsx');
+  },
+  importFile(inp) {
+    const f = inp.files[0]; if (!f) return;
+    const rd = new FileReader();
+    rd.onload = async (e) => {
+      try {
+        const wb = XLSX.read(e.target.result, { type: 'array' });
+        const raw = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { defval: '' });
+        const rows = raw.map(r => { const o = {}; Object.keys(r).forEach(k => o[k.toLowerCase().trim()] = String(r[k]).trim()); return o; })
+          .map(o => ({ username: o.username, password: o.password, nama: o.nama, role: (o.role || 'siswa').toLowerCase(), kelas: o.kelas || '' }))
+          .filter(o => o.username && o.password && o.nama && ['siswa', 'pengawas'].includes(o.role));
+        if (!rows.length) { toast('Tidak ada baris valid. Periksa kolom & isi file.', 'err'); inp.value = ''; return; }
+        await run(async () => { const n = await API.importUsers(rows); await refresh(); render(); toast(`${n} pengguna berhasil diimport.`); }, 'Mengimport...');
+      } catch (er) { toast('File tidak dapat dibaca: ' + er.message, 'err'); }
+      inp.value = '';
+    };
+    rd.readAsArrayBuffer(f);
+  },
+  async cetakKartu() {
+    const kid = $('f-kartu').value;
+    const sis = S.data.users.filter(u => u.role === 'siswa' && (!kid || u.kelas_id === kid)).sort((a, b) => kName(a.kelas_id).localeCompare(kName(b.kelas_id)) || a.nama.localeCompare(b.nama));
+    if (!sis.length) { toast('Tidak ada siswa untuk dicetak.', 'warn'); return; }
+    if (!(await ask({ title: 'Reset password & cetak?', text: `Password <b>${sis.length} siswa</b> akan diganti dengan password acak baru, lalu dicetak di kartu. Lanjutkan?`, ok: 'Reset & Cetak' }))) return;
+    await run(async () => {
+      const list = sis.map(s => ({ id: s.id, password: rndPass() }));
+      await API.resetPasswords(list);
+      const pm = {}; list.forEach(l => pm[l.id] = l.password);
+      const cards = sis.map(s => { const rs = S.data.ruang_siswa.find(r => r.siswa_id === s.id); const rn = rs ? (byId(S.data.ruang, rs.ruang_id) || {}).nama_ruang : '-';
+        return `<div class="card"><h4>KARTU PESERTA UJIAN<br><small>${esc(S.settings.nama_sekolah)}</small></h4><table><tr><td>Nama</td><td>: <b>${esc(s.nama)}</b></td></tr><tr><td>Kelas</td><td>: ${esc(kName(s.kelas_id))}</td></tr><tr><td>Ruang</td><td>: ${esc(rn || '-')}</td></tr><tr><td>Username</td><td>: <b>${esc(s.username)}</b></td></tr><tr><td>Password</td><td>: <b>${esc(pm[s.id])}</b></td></tr></table></div>`; }).join('');
+      printDoc('Kartu Peserta', `<div class="grid">${cards}</div>`);
+    }, 'Menyiapkan kartu...');
+  },
+
+  async addSesi(ev) {
+    ev.preventDefault(); const jm = $('f-jm').value, jb = $('f-jb').value;
+    if (jb <= jm) { toast('Jam berakhir harus setelah jam mulai.', 'warn'); return false; }
+    await run(async () => { await API.ins('sesi', { nama_sesi: $('f-sesi').value.trim(), jam_mulai: jm + ':00', jam_berakhir: jb + ':00' }); await refresh(); render(); toast('Sesi disimpan.'); }); return false;
+  },
+
+  ruangTab(t) { S.ruangTab = t; render(); },
+  async addRuang(ev) { ev.preventDefault(); await run(async () => { await API.ins('ruang', { nama_ruang: $('f-ruang').value.trim() }); await refresh(); render(); toast('Ruang disimpan.'); }); return false; },
+  plotRuang(v) { S.plotRuang = v; $('plot-list').innerHTML = plotList(); icons(); },
+  plotKelas(v) { S.plotKelas = v; $('plot-list').innerHTML = plotList(); icons(); },
+  async toggleSiswa(siswaId, on) {
+    await run(async () => { if (on) await API.ins('ruang_siswa', { ruang_id: S.plotRuang, siswa_id: siswaId }); else await API.delPair(S.plotRuang, siswaId); await refresh(); $('plot-list').innerHTML = plotList(); icons(); }, 'Menyimpan...');
+  },
+  async removeSiswa(r, s) { await run(async () => { await API.delPair(r, s); await refresh(); render(); toast('Siswa dikeluarkan dari ruang.'); }); },
+  async addRuangPengawas(ev) {
+    ev.preventDefault();
+    await run(async () => { await API.ins('ruang_pengawas', { ruang_id: $('f-rp-ruang').value, sesi_id: $('f-rp-sesi').value, pengawas_id: $('f-rp-pw').value, tanggal: $('f-rp-tgl').value }); await refresh(); render(); toast('Penugasan disimpan.'); }); return false;
+  },
+  cetakSiswaRuang(rid) {
+    const d = S.data, rs = d.ruang.filter(r => !rid || r.id === rid);
+    const body = rs.map(r => { const sis = d.ruang_siswa.filter(x => x.ruang_id === r.id).map(x => byId(d.users, x.siswa_id)).filter(Boolean).sort((a, b) => a.nama.localeCompare(b.nama));
+      return `<div class="ruang"><div class="kop"><h2>${esc(S.settings.nama_sekolah)}</h2><div>${esc(S.settings.alamat)}</div></div><h3 style="text-align:center">DAFTAR PESERTA UJIAN - ${esc(r.nama_ruang).toUpperCase()}</h3><table><thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Username</th><th>Tanda Tangan</th></tr></thead><tbody>${sis.map((s, i) => `<tr><td>${i + 1}</td><td>${esc(s.nama)}</td><td>${esc(kName(s.kelas_id))}</td><td>${esc(s.username)}</td><td style="width:140px"></td></tr>`).join('') || '<tr><td colspan="5">Belum ada siswa</td></tr>'}</tbody></table></div>`; }).join('');
+    printDoc('Daftar Siswa per Ruang', body);
+  },
+  cetakPengawas() {
+    const d = S.data, rows = d.ruang_pengawas.slice().sort((a, b) => String(a.tanggal).localeCompare(String(b.tanggal)));
+    printDoc('Jadwal Pengawas', `<div class="kop"><h2>${esc(S.settings.nama_sekolah)}</h2><div>${esc(S.settings.alamat)}</div></div><h3 style="text-align:center">JADWAL TUGAS PENGAWAS UJIAN</h3><table><thead><tr><th>No</th><th>Tanggal</th><th>Sesi</th><th>Jam</th><th>Ruang</th><th>Pengawas</th></tr></thead><tbody>${rows.map((r, i) => { const s = byId(d.sesi, r.sesi_id) || {}; return `<tr><td>${i + 1}</td><td>${fmtDate(r.tanggal)}</td><td>${esc(s.nama_sesi || '')}</td><td>${hhmm(s.jam_mulai)}-${hhmm(s.jam_berakhir)}</td><td>${esc((byId(d.ruang, r.ruang_id) || {}).nama_ruang || '')}</td><td>${esc(uName(r.pengawas_id))}</td></tr>`; }).join('') || '<tr><td colspan="6">Belum ada penugasan</td></tr>'}</tbody></table>`);
+  },
+
+  async saveUjian(ev) {
+    ev.preventDefault();
+    const row = { kelas_id: $('f-uj-kls').value, mapel: $('f-uj-map').value.trim(), tanggal: $('f-uj-tgl').value, sesi_id: $('f-uj-sesi').value, link: $('f-uj-link').value.trim() };
+    await run(async () => {
+      if (S.editUjian) { await API.upd('ujian', S.editUjian, row); toast('Jadwal diperbarui.'); }
+      else { await API.ins('ujian', { ...row, token: rndToken() }); toast('Jadwal disimpan.'); }
+      S.editUjian = null; await refresh(); render();
+    }); return false;
+  },
+  editUjian(id) { S.editUjian = id; render(); $('cbt-root').scrollTo({ top: 0, behavior: 'smooth' }); },
+  resetUjian() { S.editUjian = null; render(); },
+  async tokenManual(id) { await run(async () => { await API.upd('ujian', id, { token: rndToken(), token_updated_at: new Date().toISOString() }); await refresh(); render(); toast('Token diperbarui.'); }); },
+  async toggleStatus(id) { const u = byId(S.data.ujian, id); await run(async () => { await API.upd('ujian', id, { status: u.status === 'Aktif' ? 'Selesai' : 'Aktif', token_updated_at: new Date().toISOString() }); await refresh(); render(); toast('Status diperbarui.'); }); },
+
+  logoFile(inp) {
+    const f = inp.files[0]; if (!f) return;
+    const img = new Image(), rd = new FileReader();
+    rd.onload = e => { img.onload = () => { const m = 200, r = Math.min(1, m / Math.max(img.width, img.height)); const c = document.createElement('canvas'); c.width = Math.round(img.width * r); c.height = Math.round(img.height * r); c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); $('st-logo').value = c.toDataURL('image/png'); $('st-logo-prev').innerHTML = `<img src="${$('st-logo').value}" style="width:56px;height:56px;object-fit:contain;border-radius:10px">`; }; img.src = e.target.result; };
+    rd.readAsDataURL(f);
+  },
+  logoClear() { $('st-logo').value = ''; $('st-logo-prev').innerHTML = '<div style="width:56px;height:56px" class="rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 text-xs">Kosong</div>'; },
+  async saveSettings(ev) {
+    ev.preventDefault();
+    const s = { nama_app: $('st-app').value.trim(), nama_sekolah: $('st-sch').value.trim(), alamat: $('st-alm').value.trim(), logo: $('st-logo').value, zona_waktu: $('st-tz').value, maks_pelanggaran: Math.min(10, Math.max(1, parseInt($('st-mx').value, 10) || 3)) };
+    await run(async () => { await API.saveSettings(s); S.settings = { ...S.settings, ...s }; document.title = s.nama_app; render(); toast('Pengaturan disimpan.'); }); return false;
+  },
+
+  async pNewToken(id) { await run(async () => { const r = await API.newToken(S.cred, id); if (!r.success) throw new Error(r.message); S.pw = await API.getPengawas(S.cred); sync(S.pw.server_now); render(); toast('Token baru: ' + r.token); }); },
+  async pExtend(id) {
+    const v = await ask({ title: 'Tambah Waktu', text: 'Berapa menit waktu ujian ingin ditambahkan? (1-180)', input: { type: 'number', value: '15' }, ok: 'Tambah' });
+    const m = parseInt(v, 10); if (!v || !(m > 0)) return;
+    await run(async () => { await API.extend(S.cred, id, m); S.pw = await API.getPengawas(S.cred); sync(S.pw.server_now); render(); toast(`Waktu ditambah ${Math.min(m, 180)} menit.`); });
+  },
+  async pEnd(id) {
+    if (!(await ask({ title: 'Akhiri Ujian?', text: 'Semua peserta akan otomatis keluar dari ruang ujian. Tindakan ini tidak bisa dibatalkan oleh pengawas.', ok: 'Akhiri Ujian', danger: true }))) return;
+    await run(async () => { await API.endExam(S.cred, id); S.pw = await API.getPengawas(S.cred); sync(S.pw.server_now); render(); toast('Ujian diakhiri.'); });
+  },
+
+  async prepareExam(id) {
+    const u = ((S.sw && S.sw.exams) || []).find(x => x.id === id); if (!u) return;
+    const v = await ask({ title: u.mapel, text: 'Masukkan <b>token ujian</b> dari pengawas:', input: { type: 'tel', placeholder: '5 digit token' }, ok: 'Masuk Ruang Ujian' });
+    if (!v) return;
+    await run(async () => {
+      const sid = newSid();
+      const r = await API.checkToken(S.cred, id, v, sid);
+      if (!r.success) { toast(r.message, 'err'); return; }
+      sync(r.server_now); startRoom(u, r.link, r.end_at, { sid });
+    }, 'Memeriksa token...');
+  },
+  async finishExam() {
+    const R = S.room; if (!R) return;
+    if (R.over) { closeRoom(); return; }
+    if (await ask({ title: 'Selesai Ujian?', text: 'Pastikan Anda sudah mengirim (submit) jawaban pada formulir. Setelah keluar, Anda <b>tidak dapat masuk kembali</b> ke ujian ini kecuali diizinkan pengawas.', ok: 'Ya, Selesai', danger: true })) {
+      await run(async () => { try { await API.finishExam(S.cred, R.ex.id, R.sid); } catch (e) {} });
+      closeRoom();
+    }
+  },
+  roomAck() { roomOvHide(); if (FS_OK && !isFs()) goFs(); },
+  roomFs() { goFs().then(() => { if (isFs() || !FS_OK) roomOvHide(); }); },
+  closeRoom,
+
+  /* ---- Monitoring ---- */
+  pMon(id) { S.monId = id; A.go('p_monitor'); },
+  monSelect(id) { S.monId = id; S.mon = null; const el = $('mon-table'); if (el) el.innerHTML = monTable(); A.loadMon(); },
+  async loadMon(silent) {
+    if (!S.monId) return;
+    const f = async () => { S.mon = await API.getMonitor(S.role === 'admin' ? null : S.cred, S.monId); sync(S.mon.server_now); const el = $('mon-table'); if (el) { el.innerHTML = monTable(); icons(); } };
+    if (silent) { try { await f(); } catch (e) {} } else await run(f, 'Memuat...');
+  },
+  async monAct(siswaId, aksi) {
+    const txt = { buka_kunci: 'Buka kunci siswa ini? Pelanggaran berikutnya akan langsung mengunci kembali.', masuk_ulang: 'Izinkan siswa ini masuk ulang (misalnya setelah pindah perangkat)? Siswa perlu memasukkan token lagi.', reset: 'Reset seluruh status dan riwayat pelanggaran siswa ini pada ujian ini?' }[aksi];
+    if (!(await ask({ title: 'Konfirmasi', text: txt, ok: 'Ya, Lanjutkan', danger: aksi === 'reset' }))) return;
+    await run(async () => { await API.monitorAction(S.role === 'admin' ? null : S.cred, S.monId, siswaId, aksi); await A.loadMon(true); toast('Berhasil diperbarui.'); });
+  },
+  monDetail(siswaId) {
+    const r = S.mon && S.mon.rows.find(x => x.siswa_id === siswaId); if (!r) return;
+    openModal(`<h3 class="text-lg font-bold mb-1">Riwayat Pelanggaran</h3><p class="text-sm text-slate-500 mb-3">${esc(r.nama)} (${r.pelanggaran}/${S.mon.maks})</p>${!r.riwayat.length ? empty('Tidak ada catatan.') : `<div class="space-y-2">${r.riwayat.map(x => `<div class="flex justify-between gap-3 p-2.5 rounded-xl bg-red-50 text-sm"><span class="font-semibold text-red-700">${esc(VIOL_LABEL[x.jenis] || x.jenis)}${x.detail ? ' <span class="text-red-400">(' + esc(x.detail) + ')</span>' : ''}</span><span class="text-xs text-slate-500 whitespace-nowrap">${new Date(x.waktu).toLocaleTimeString('id-ID')}</span></div>`).join('')}</div>`}<div class="flex justify-end mt-4"><button class="btn btn-p" onclick="document.getElementById('modal').style.display='none';document.getElementById('modal').innerHTML=''">Tutup</button></div>`);
+  }
+};
+
+/* =====================================================================
+   BOOT
+===================================================================== */
+async function boot() {
+  document.title = S.settings.nama_app;
+  setupPWA();
+  render();
+  if (!IS_PREVIEW) {
+    if (SUPABASE_URL.includes('URL_SUPABASE') || SUPABASE_ANON_KEY.includes('ANON_KEY')) { $('app').innerHTML = `<div class="min-h-screen flex items-center justify-center p-6"><div class="glass-strong rounded-3xl p-8 max-w-md text-center"><div class="text-4xl mb-3">⚙️</div><h2 class="text-xl font-extrabold mb-2">Konfigurasi Belum Lengkap</h2><p class="text-sm text-slate-600">Isi <b>SUPABASE_URL</b> dan <b>SUPABASE_ANON_KEY</b> pada bagian KONFIGURASI APLIKASI di kode.</p></div></div>`; return; }
+    sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, { auth: { persistSession: true, autoRefreshToken: true } });
+    API = L;
+  }
+  await run(async () => {
+    await autoSetupDatabase();
+    try { const s = await API.getSettings(); if (s) S.settings = { ...S.settings, ...s }; document.title = S.settings.nama_app; } catch (e) { console.warn(e); }
+    // pulihkan sesi
+    let restored = false;
+    try {
+      if (!IS_PREVIEW) { const au = await API.adminSession(); if (au) { await enter('admin', { nama: 'Administrator', username: au.email }, null); restored = true; } }
+      const ss = sessionStorage.getItem('cbt_sess');
+      if (!restored && ss) {
+        const { cred, user } = JSON.parse(ss); const r = await API.loginUser(cred.u, cred.p);
+        if (r && r.success) {
+          await enter(r.user.role, r.user, cred); restored = true;
+          const rm = JSON.parse(sessionStorage.getItem('cbt_room') || 'null');
+          if (rm && r.user.role === 'siswa' && new Date(rm.end).getTime() > now()) {
+            const ex = ((S.sw && S.sw.exams) || []).find(x => x.id === rm.id);
+            if (ex) { const st = await API.examState(S.cred, rm.id, rm.sid); sync(st.server_now); if (st.status === 'Aktif' && !st.duplicate && !st.selesai) startRoom(ex, rm.link, st.end_at, { sid: rm.sid, restored: true, count: st.pelanggaran, maks: st.maks, locked: st.terkunci }); else sessionStorage.removeItem('cbt_room'); }
+          }
+        }
+      }
+    } catch (e) { console.warn(e); sessionStorage.removeItem('cbt_sess'); }
+    if (!restored) render(); else icons();
+  }, 'Menyiapkan aplikasi...');
+}
+boot();
+</script>
